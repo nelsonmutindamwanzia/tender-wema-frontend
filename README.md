@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# Tender Wema
+## Authors
+1. Nelson Mutinda
+2. Sheillah Wangala
+3. Dyes Junior
+4. Ann Mwangi
+5. Collince Owinoh
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
