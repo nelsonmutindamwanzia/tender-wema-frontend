@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./supplier.css";
 
 function Suppliers() {
     const [suppliers, setSuppliers] = useState([]);
