@@ -8,5 +8,12 @@ function Suppliers () {
         .then((response) => response.json())
         .then((data) => setSuppliers(data));
     }, []);
+
+    return (
+        <div>
+            
+        </div>
+    )
+
 }
 export default Suppliers;
