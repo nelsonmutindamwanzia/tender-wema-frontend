@@ -9,14 +9,14 @@ function Landing() {
         <div className='container-fluid' id='landing-page'>
             <div className='row'>
                 <div className='col-md-4 col-lg-4 col-sm-12 col-xl-6'>
-                    <br/>  <br/> <br/> <br/>
+                    <br/> <br/> <br/>
                     <h1 className='landing-header'>Tendering <GrDocumentPerformance size={60} /> Made Easier</h1>
                     <p className='landing-text'>Smart, Easy and Efficient Tendering Processes</p>
                     <br/>
                     <button type="button" className="btn"> Learn More...</button> 
                 </div>
                 <div className='col-md-6 col-lg-6 col-sm-12 col-xl-6'>
-                    <br/><br/>
+                    
                     <img className='img-fluid' src={landingimg} alt='landing-page-img' />
                 </div>
             </div>
