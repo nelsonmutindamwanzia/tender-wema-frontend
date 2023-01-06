@@ -1,6 +1,7 @@
 import React from 'react'
 import landingimg from '../assets/landingimg2.png'
 import { FaClock, FaBolt, FaCheckDouble } from "react-icons/fa";
+import {GrDocumentPerformance} from "react-icons/gr";
 
 function Landing() {
   return (
@@ -9,7 +10,7 @@ function Landing() {
             <div className='row'>
                 <div className='col-md-4 col-lg-4 col-sm-12 col-xl-6'>
                     <br/>  <br/> <br/> <br/>
-                    <h1 className='landing-header'>Tendering Made Easier</h1>
+                    <h1 className='landing-header'>Tendering <GrDocumentPerformance size={60} /> Made Easier</h1>
                     <p className='landing-text'>Smart, Easy and Efficient Tendering Processes</p>
                     <br/>
                     <button type="button" className="btn"> Learn More...</button> 
