@@ -1,0 +1,10 @@
+.card {
+    width: 300px;
+    border-radius: 20px;
+    
+}
+.card-header {
+    font-size: 22px;
+    font-weight: bolder;
+    color: black;
+}
