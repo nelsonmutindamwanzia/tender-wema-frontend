@@ -11,16 +11,16 @@ function Suppliers() {
     }, []);
 
     return (
-        <div>
+        <div className="cards-container" >
             <h5>Suppliers</h5>
             {suppliers.map((supplier) => {
                 return (
                     <div className="card">
                         <h5 className="card-header">{supplier.company_name} </h5>
                         <div className="card-body">
-                            <p className="card-title">Company Email: {supplier.email} </p>
-                            <p className="card-text">Company Telephone: {supplier.company_telephone}</p>
-                            <p className="card-text">Company Address: {supplier.company_address}</p>
+                            <p className="card-text">Company Email: <span>{supplier.email}</span> </p> 
+                            <p className="card-text">Telephone: {supplier.company_telephone}</p>
+                            <p className="card-text">Address:   {supplier.company_address}</p>
                             <a href="#" className="btn btn-primary">view</a>
                         </div>
                     </div>
