@@ -1,5 +1,8 @@
+.cards-container {
+    display: flex;
+}
 .card {
-    width: 300px;
+    width: 350px;
     border-radius: 20px;
     
 }
@@ -7,4 +10,11 @@
     font-size: 22px;
     font-weight: bolder;
     color: black;
+}
+.card-text {
+    font-size: 16px;
+    display: inline-block;
+}
+.card-text span {
+    font-size: 16px;
 }
