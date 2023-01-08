@@ -12,7 +12,7 @@ function Suppliers() {
 
     return (
         <div className="cards-container" >
-            <h5>Suppliers</h5>
+            <h5>Supplier Profiles</h5>
             {suppliers.map((supplier) => {
                 return (
                     <div className="card">
@@ -24,22 +24,6 @@ function Suppliers() {
                             <a href="#" className="btn btn-primary">view</a>
                         </div>
                     </div>
-
-                    // <div className="card">
-                    //     <div className="card-body">
-                    //         <h5 className="card-title">{supplier.company_name}</h5>
-                    //     </div>
-                    //     <ul className="list-group list-group-flush">
-                    //         <li className="list-group-item">Company Email: {supplier.email}</li>
-                    //         <li className="list-group-item">Company Telephone: {supplier.company_telephone}</li>
-                    //         <li className="list-group-item">{supplier.company_address}</li>
-                    //     </ul>
-                    //     <div className="card-body">
-                    //         {/* <a href="#" class="card-link">View</a> */}
-                    //     </div>
-                    // </div>
-
-
                 )
 
             })}
