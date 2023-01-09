@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./supplier.css";
+//import SupSearchBar from "./SupSearchBar";
 
 function Suppliers() {
     const [suppliers, setSuppliers] = useState([]);
@@ -12,6 +13,8 @@ function Suppliers() {
 
     return (
         <div className="supplier-container" >
+            {/* <SupSearchBar /> */}
+            <br></br>
             <h5>Supplier Profiles</h5>
             <div className="cards-container" >               
                 {suppliers.map((supplier) => {
