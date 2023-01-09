@@ -1,5 +1,11 @@
-/* .cards-container {
+.supplier-container {
+    margin-left: 300px;
+}
+.cards-container {
     display: flex;
+    justify-content: space-around;
+    border: 20px;
+    
 }
 .card {
     width: 350px;
@@ -17,4 +23,4 @@
 }
 .card-text span {
     font-size: 16px;
-} */
+}
