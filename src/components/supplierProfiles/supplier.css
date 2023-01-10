@@ -1,0 +1,41 @@
+.supplier-container {
+    margin-left: 350px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    border: 20px;
+
+}
+
+.card {
+    width: 350px;
+    border-radius: 20px;
+
+}
+
+.card-header {
+    font-size: 22px;
+    font-weight: bolder;
+    color: black;
+}
+
+.card-text {
+    font-size: 16px;
+    display: inline-block;
+}
+
+.card-text span {
+    font-size: 16px;
+}
+
+.input-group {
+    /* position: absolute; */
+    width: 917px;
+    height: 62px;
+    left: 316px;
+    top: 27px;
+    background: #E4EDFF;
+    border-radius: 20px;
+}
