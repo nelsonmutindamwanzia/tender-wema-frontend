@@ -2,22 +2,24 @@ import React from 'react';
 import Footer from './components/Footer';
 import Landing from './components/Landing';
 import Navi from './components/Navi';
-import Navbar from './components/supplierProfiles/Navbar';
+// import Navbar from './components/supplierProfiles/Navbar';
 import { Route, Routes } from 'react-router-dom';
-import Suppliers from './components/supplierProfiles/Suppliers';
-
+import Signup from './components/Signup';
+import Login from './components/login';
 
 function App() {
   return (
       <>
       <Navi/>
-      <Landing/>
+      <Routes>
+        <Route path='/' element={<Landing/>}/>
+        <Route path='/signup' element={<Signup/>}/>
+        <Route path='/login' element={<Login/>}/>
+      </Routes>
       <Footer/>
-        {/* <Navbar />
-        <Routes>
-          <Route path='/' element={<Suppliers /> } />
-        </Routes> */}
       </>
+      
+    
   )
       
 // import Home from './components/Home';

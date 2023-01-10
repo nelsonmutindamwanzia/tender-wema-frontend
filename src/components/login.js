@@ -1,4 +1,5 @@
 import React, { useState} from 'react'
+// import './validation.css'
 
 import loginImg from '../assets/Vector.png'
 // import backgrnd from '../assets/rec6.jpg'

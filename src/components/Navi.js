@@ -2,6 +2,7 @@ import React from 'react'
 import {GrDocumentPerformance} from "react-icons/gr";
 import aboutus1 from '../assets/aboutus1.png'
 import aboutus3 from '../assets/aboutus3.png'
+import '../index.css'
 
 
 
@@ -11,13 +12,13 @@ function Navi() {
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
             <span className='tender-logo'> <GrDocumentPerformance/> &nbsp; </span>
-            <a className="navbar-brand" href="#">Tender Wema</a>
+            <a className="navbar-brand" href="/">Tender Wema</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
               <div className="navbar-nav">
-                <a className="nav-link" id='active' aria-current="page" href="#">Home</a>
+                <a className="nav-link" id='active' aria-current="page" href="/">Home</a>
                 {/* trigger about us modal */}
                 <a className="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">About Us</a>
                 {/* modal */}
@@ -70,8 +71,8 @@ function Navi() {
                         </div>
                 </div>
                 <a className="nav-link" href="#">Tenders</a>
-                <a className="nav-link disabled">Sign Up</a>
-                <a className="nav-link disabled">Login</a>
+                <a className="nav-link" href="/signup">Sign Up</a>
+                <a className="nav-link" href="/login">Login</a>
               </div>
             </div>
           </div>
