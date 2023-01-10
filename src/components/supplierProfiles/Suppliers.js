@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Footer from "../Footer";
 import "./supplier.css";
 //import SupSearchBar from "./SupSearchBar";
 
@@ -33,7 +32,6 @@ function Suppliers() {
 
                 })}
             </div>
-            {/* <Footer/> */}
         </div>
 
     )

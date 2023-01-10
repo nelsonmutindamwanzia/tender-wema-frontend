@@ -2,7 +2,7 @@ import React from 'react'
 import {GrDocumentPerformance} from "react-icons/gr";
 import aboutus1 from '../assets/aboutus1.png'
 import aboutus3 from '../assets/aboutus3.png'
-import { NavLink } from 'react-router-dom';
+
 
 
 function Navi() {
@@ -17,8 +17,7 @@ function Navi() {
             </button>
             <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
               <div className="navbar-nav">
-                {/* <a className="nav-link" id='active' aria-current="page" href="#">Home</a> */}
-                <NavLink to='/' className="nav-link"><a className="nav-link" id='active' aria-current="page" href="#">Home</a> <span className="sr-only"></span></NavLink>
+                <a className="nav-link" id='active' aria-current="page" href="#">Home</a>
                 {/* trigger about us modal */}
                 <a className="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">About Us</a>
                 {/* modal */}
@@ -32,6 +31,7 @@ function Navi() {
                             <div class="modal-body">
                                 <div className='about'>
                                     <div className="projcard-container">
+            
                                         <div className="projcard projcard-blue">
                                             <div className="projcard-innerbox">
                                             <img className="projcard-img" src={aboutus1}/>
@@ -70,10 +70,8 @@ function Navi() {
                         </div>
                 </div>
                 <a className="nav-link" href="#">Tenders</a>
-                {/* <a className="nav-link disabled">Sign Up</a> */}
-                <NavLink to='/signup' className="nav-link"><a className="nav-link" id='active' aria-current="page" href="#">Sign Up</a> <span className="sr-only"></span></NavLink>
-                {/* <a className="nav-link disabled">Login</a> */}
-                <NavLink to='/login' className="nav-link"><a className="nav-link" id='active' aria-current="page" href="#">Login</a> <span className="sr-only"></span></NavLink>
+                <a className="nav-link disabled">Sign Up</a>
+                <a className="nav-link disabled">Login</a>
               </div>
             </div>
           </div>
