@@ -1,5 +1,7 @@
 import React from 'react'
 import landingimg from '../assets/landingimg2.png'
+import aboutus1 from '../assets/aboutus1.png'
+import aboutus3 from '../assets/aboutus3.png'
 import { FaClock, FaBolt, FaCheckDouble } from "react-icons/fa";
 import {GrDocumentPerformance} from "react-icons/gr";
 
@@ -19,24 +21,23 @@ function Landing() {
                         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                         <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
                             <div class="modal-content">
-                            {/* <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div> */}
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">About Us</h1>
+                                {/* <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> */}
+                            </div>
                             <div class="modal-body">
                                 <div className='about'>
                                     <div className="projcard-container">
             
                                         <div className="projcard projcard-blue">
                                             <div className="projcard-innerbox">
-                                            <img className="projcard-img" src=''/>
+                                            <img className="projcard-img" src={aboutus1}/>
                                             <div className="projcard-textbox">
-                                                <div className="projcard-title">Lorem Ipsum</div>
-                                                <div className="projcard-subtitle">Lorem Ipsum dolor</div>
+                                                <div className="projcard-title">About the Platform</div>
+                                                {/* <div className="projcard-subtitle">Lorem Ipsum dolor</div> */}
                                                 <div className="projcard-bar"></div>
-                                                <div className="projcard-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint</div>
-                                                <div className="projcard-tagbox">
-                                                <span className="projcard-tag"> 3 likes</span>
+                                                <div className="projcard-description">
+                                                    Tender Wema is a leading and user-friendly tender management system which assist in the process of planning, selecting and publishing bids on tenders efficiently, keeping a transparent and clear audit trail which can be used to determing the best contracts
                                                 </div>
                                             </div>
                                             </div>
@@ -44,16 +45,12 @@ function Landing() {
 
                                         <div className="projcard projcard-red">
                                             <div className="projcard-innerbox">
-                                            <img className="projcard-img" src=''/>
+                                            <img className="projcard-img" src={aboutus3}/>
                                             <div className="projcard-textbox">
-                                                <div className="projcard-title">Lorem Ipsum</div>
-                                                <div className="projcard-subtitle"> Lorem Ipsum Dolor</div>
+                                                <div className="projcard-title">Main goals</div>
                                                 <div className="projcard-bar"></div>
-                                                <div className="projcard-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint</div>
-                                                <div className="projcard-tagbox">
-                                                    {/* <button type="button" className="btn btn-danger">Add Review</button> 
-                                                    <div className='divider'></div>
-                                                    <button type="button" className="btn btn-danger">Add Review</button>  */}
+                                                <div className="projcard-description">
+                                                         To make sure that work and projects are awarnded fairly and through a transparent process to the best applicant; whether a sole trader or a company. 
                                                 </div>
                                             </div>
                                             </div>

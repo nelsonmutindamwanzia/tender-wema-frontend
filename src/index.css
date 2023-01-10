@@ -86,11 +86,16 @@ button.btn {
 
 
 /* modal edit */
+h1.modal-title{
+    color: #0D51C0;
+    font-weight: 800;
+    font-family: 'Lora', serif;
+}
 
 /* Demo Code: */
-destination {
-	font-family: 'Open Sans', arial, sans-serif;
-	color: #333;
+.about {
+	font-family: 'Lora', serif;
+	color: #000;
 	font-size: 14px;
 }
 .projcard-container {
@@ -203,13 +208,15 @@ destination {
 	position: relative;
 }
 .projcard-title {
-	font-family: 'Voces', 'Open Sans', arial, sans-serif;
+	font-family: 'Lora', serif;
 	font-size: 24px;
+    color: #06328a ;
+    font-weight: 500;
 }
-.projcard-subtitle {
+/* .projcard-subtitle {
 	font-family: 'Voces', 'Open Sans', arial, sans-serif;
 	color: #888;
-}
+} */
 .projcard-bar {
 	left: -2px;
 	width: 50px;
@@ -219,12 +226,12 @@ destination {
 	background-color: #424242;
 	transition: width 0.2s ease;
 }
-.projcard-blue .projcard-bar { background-color: #0088FF; }
-.projcard-blue::before { background-image: linear-gradient(-70deg, #0088FF, transparent 50%); }
-.projcard-blue:nth-child(2n)::before { background-image: linear-gradient(-250deg, #0088FF, transparent 50%); }
-.projcard-red .projcard-bar { background-color: #D62F1F; }
-.projcard-red::before { background-image: linear-gradient(-70deg, #D62F1F, transparent 50%); }
-.projcard-red:nth-child(2n)::before { background-image: linear-gradient(-250deg, #D62F1F, transparent 50%); }
+.projcard-blue .projcard-bar { background-color: #0D51C0; }
+.projcard-blue::before { background-image: linear-gradient(-70deg, #0088FF, transparent 70%); }
+.projcard-blue:nth-child(2n)::before { background-image: linear-gradient(-250deg, #0088FF, transparent 70%); }
+.projcard-red .projcard-bar { background-color: #0D51C0; }
+.projcard-red::before { background-image: linear-gradient(-70deg, #0088FF, transparent 0%); }
+.projcard-red:nth-child(2n)::before { background-image: linear-gradient(-250deg, #0088FF, transparent 70%); }
 .projcard-green .projcard-bar { background-color: #40BD00; }
 .projcard-green::before { background-image: linear-gradient(-70deg, #40BD00, transparent 50%); }
 .projcard-green:nth-child(2n)::before { background-image: linear-gradient(-250deg, #40BD00, transparent 50%); }
@@ -245,8 +252,8 @@ destination {
 .projcard-customcolor:nth-child(2n)::before { background-image: linear-gradient(-250deg, var(--projcard-color), transparent 50%); }
 .projcard-description {
 	z-index: 10;
-	font-size: 15px;
-	color: #424242;
+	font-size: 17px;
+	color: rgb(48, 47, 47);
 	height: 125px;
 	overflow: hidden;
 	text-overflow: ellipsis;
