@@ -17,18 +17,54 @@ function Landing() {
                     <button type="button" className="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> Learn More...</button> 
                     {/* modal */}
                         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
                             <div class="modal-content">
-                            <div class="modal-header">
+                            {/* <div class="modal-header">
                                 <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
+                            </div> */}
                             <div class="modal-body">
-                                ...
+                                <div className='about'>
+                                    <div className="projcard-container">
+            
+                                        <div className="projcard projcard-blue">
+                                            <div className="projcard-innerbox">
+                                            <img className="projcard-img" src=''/>
+                                            <div className="projcard-textbox">
+                                                <div className="projcard-title">Lorem Ipsum</div>
+                                                <div className="projcard-subtitle">Lorem Ipsum dolor</div>
+                                                <div className="projcard-bar"></div>
+                                                <div className="projcard-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint</div>
+                                                <div className="projcard-tagbox">
+                                                <span className="projcard-tag"> 3 likes</span>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="projcard projcard-red">
+                                            <div className="projcard-innerbox">
+                                            <img className="projcard-img" src=''/>
+                                            <div className="projcard-textbox">
+                                                <div className="projcard-title">Lorem Ipsum</div>
+                                                <div className="projcard-subtitle"> Lorem Ipsum Dolor</div>
+                                                <div className="projcard-bar"></div>
+                                                <div className="projcard-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint</div>
+                                                <div className="projcard-tagbox">
+                                                    {/* <button type="button" className="btn btn-danger">Add Review</button> 
+                                                    <div className='divider'></div>
+                                                    <button type="button" className="btn btn-danger">Add Review</button>  */}
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Understood</button>
                             </div>
                             </div>
                         </div>
