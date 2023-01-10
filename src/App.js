@@ -18,24 +18,24 @@ function App() {
           <Route path='/' element={<Suppliers /> } />
         </Routes> */}
       </>
-    
+  )
       
-import Home from './components/Home';
-import Login from './components/login'
+// import Home from './components/Home';
+// import Login from './components/login'
 
-import { Navbar } from "./components/Navbar";
-import Signup from "./components/Signup";
+// import { Navbar } from "./components/Navbar";
+// import Signup from "./components/Signup";
 
-function App() {
-  return (
-    <div >
-      {/* <Home/> */}
-      <Navbar/>
-      <Login />
-      <Signup />
+// function App() {
+//   return (
+//     <div >
+//       {/* <Home/> */}
+//       <Navbar/>
+//       <Login />
+//       <Signup />
       
-    </div>
-  );
+//     </div>
+//   );
 }
 
 export default App;
