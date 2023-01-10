@@ -1,22 +1,22 @@
 import React from 'react';
 import Footer from './components/Footer';
 import Landing from './components/Landing';
-import Navi from './components/Navi';
-import Navbar from './components/supplierProfiles/Navbar';
 import { Route, Routes } from 'react-router-dom';
-import Suppliers from './components/supplierProfiles/Suppliers';
+import SupplierPage from './components/supplierProfiles/SupplierPage';
+
+
 
 
 function App() {
   return (
       <>
-      <Navi/>
-      <Landing/>
-      <Footer/>
-        {/* <Navbar />
-        <Routes>
-          <Route path='/' element={<Suppliers /> } />
-        </Routes> */}
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/suppliers" element={<SupplierPage />} />
+        
+      </Routes>
+        {/* <Footer/> */}
+
       </>
     
       

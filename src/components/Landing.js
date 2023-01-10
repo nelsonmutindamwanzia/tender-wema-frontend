@@ -2,12 +2,14 @@ import React from 'react'
 import landingimg from '../assets/landingimg2.png'
 import aboutus1 from '../assets/aboutus1.png'
 import aboutus3 from '../assets/aboutus3.png'
+import Navi from './Navi';
 import { FaClock, FaBolt, FaCheckDouble } from "react-icons/fa";
 import {GrDocumentPerformance} from "react-icons/gr";
 
 function Landing() {
   return (
     <div>
+        <Navi/>
         <div className='container-fluid' id='landing-page'>
             <div className='row'>
                 <div className='col-md-4 col-lg-4 col-sm-12 col-xl-6'>

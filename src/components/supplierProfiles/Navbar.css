@@ -1,10 +1,11 @@
-.navbar {
+/* .navbar {
     background-color: #051135;
     height: 80px;
     display: flex;
     justify-content: flex-start;
     align-items: left;
-  }
+    
+  } */
   
   .menu-bars {
     margin-left: 1rem;
@@ -22,6 +23,7 @@
     top: 0;
     left: -100%;
     transition: 850ms;
+    /* margin-top: 100px; */
   }
   
   .nav-menu.active {
