@@ -1,27 +1,28 @@
-.navbar {
+/* .navbar {
     background-color: #051135;
     height: 80px;
     display: flex;
     justify-content: flex-start;
     align-items: left;
   }
-  
+   */
   .menu-bars {
-    margin-left: 1rem;
-    font-size: 2rem;
+    margin-left: 10px;
+    /* font-size: 2rem; */
     background: none;
   }
   
   .nav-menu {
     background-color: #051135;
     width: 300px;
-    height: 100vh;
+    /* height: 90%; */
     display: flex;
     justify-content: center;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
-    left: -100%;
+    margin-left: -100px;
     transition: 850ms;
+    margin-top: 20px;
   }
   
   .nav-menu.active {
@@ -61,7 +62,7 @@
   .navbar-toggle {
     background-color: #051135;
     width: 100%;
-    height: 80px;
+    height: 80%;
     display: flex;
     justify-content: flex-start;
     align-items: left;

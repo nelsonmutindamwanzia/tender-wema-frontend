@@ -1,7 +1,13 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 .supplier-container {
     margin-left: 350px;
+    margin-top: -550px;
+    display: flexbox;
 }
-
 .cards-container {
     display: flex;
     justify-content: space-around;
@@ -10,24 +16,25 @@
 }
 
 .card {
-    width: 350px;
+    width: 300px;
     border-radius: 20px;
-
+    height: 250px;
+    margin: 4px;
 }
 
 .card-header {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bolder;
     color: black;
 }
 
 .card-text {
-    font-size: 16px;
+    font-size: 12px;
     display: inline-block;
 }
 
 .card-text span {
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .input-group {
@@ -38,4 +45,8 @@
     top: 27px;
     background: #E4EDFF;
     border-radius: 20px;
+}
+#footer{
+    background-color: #ECF7FF ;
+	margin-top: auto;   
 }
