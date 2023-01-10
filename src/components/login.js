@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useState} from 'react'
 
 import loginImg from '../assets/Vector.png'
 // import backgrnd from '../assets/rec6.jpg'
 
 export default function Login() {
-  // const [values, setValues] = useState({
-  //   Email: '',
-  //   Password: ''
-  // })
+  const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+
+  const checkEmail = () =>{
+    alert('test')
+  }
+  const [values, setValues] = useState({
+    Email: '',
+    Password: ''
+  })
   return (
     <div className='grid grid-cols-1 sm:grid-cols-2 h-screen w-full'>
        
@@ -23,12 +28,12 @@ export default function Login() {
           <h2 className='text-4xl font-bold text-center py-6'>Hello Again!</h2>
           <div className='flex flex-col py-2'>
             <label>Email</label>
-            <input className='border p-2' type="text" />
+            <input className='border p-2' type="text" value={values.Email} emailonChange={checkEmail}/>
           </div>
 
           <div className='flex flex-col py-2'>
             <label>Password</label>
-            <input className='border p-2' type="password" />
+            <input className='border p-2' type="password"value={values.password} />
           </div>
           
           <div className='flex justify-between'>
