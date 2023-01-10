@@ -65,7 +65,20 @@ export default function Login() {
   )
 }
 
+// This form has three variables: email, password and error. The email and password 
+//state variables are used to store the user input and the error state variable is used to store
+// any error messages that should be displayed to the user
 
+// The form has an onSubmit handler called handlesubmit which is called when the user submits the form
+
+//The handesubmit function first prevents the default form submission behavour, then checks if the email state variable includes an @ character.
+// If it does not, it sets the error state variable to an error message and returns early. If the email is valid,
+//it can perforn the login logic
+
+// The form also has two input fileds, one for the email and one for the password, and each
+// input field has an onchange handler handler that updates the corresponding state
+//variable when the user types in the input. Finally, the form displays
+//the error message, if one exixts, and a login button.
 
 
 
