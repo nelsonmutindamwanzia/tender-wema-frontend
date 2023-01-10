@@ -21,7 +21,7 @@ function Validation(values) {
         error.password = "Password did not match"
     }
 
-    if(String(values.confirm_password) !== String(values.password)) {
+    if(values.confirm_password === "" || String(values.confirm_password) !== String(values.password)) {
         console.log(values.confirm_password + "___" + values.password)
         error.confirm_password = "password did not match"
     }

@@ -50,7 +50,7 @@ export default function Signup() {
             {/* <label>Password</label> */}
             <input className='border p-2' type="password" placeholder="Password" 
               name="password" onChange={handleInput}/>
-              {errors.password && <p style={{color: "red"}}>{errors.password}</p>}
+              {/* {errors.password && <p style={{color: "red"}}>{errors.password}</p>} */}
           </div>
 
 
