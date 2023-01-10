@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from "styled-components";
+import {SiGmail} from "react-icons/si";
+import {IoIosCall} from "react-icons/io";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faLinkedin, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { Link } from 'react-router-dom';
@@ -15,6 +17,8 @@ function Footer() {
                 </div>
                 <div className="copy">Copyright &copy; 2023 Tender Wema</div>
                 <div className="socials">
+                    <IoIosCall/>
+                    <SiGmail/>
                     <FontAwesomeIcon className="icon" icon={faFacebook} size="xl" />
                     <FontAwesomeIcon className="icon" icon={faLinkedin} size="xl" />
                     <FontAwesomeIcon className="icon" icon={faTwitter} size="xl" />
