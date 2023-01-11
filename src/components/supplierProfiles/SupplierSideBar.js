@@ -34,7 +34,7 @@ const SidebarData = [
   },
   {
     title: 'Submitted Proposals',
-    path: '/submittedProposals',
+    path: '/proposals',
     icon: <FaIcons.FaEnvelopeOpenText />,
     cName: 'nav-text'
   },
