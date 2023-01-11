@@ -44,36 +44,19 @@ function PublishedTender () {
                         </div>
 
                         <div className='tender-group'>
-                             <span> Timeline </span>
-                             <div className='timeline-container'>
-                                <div className='row'>
-                                    <div className='col-md-6'>
-
-                                         <span>From</span>
-                                        <input type="text" id="tender-name" value="" />
-
-                                    </div>
-
-                                    <div className='col-md-6'>
-                                         <span>To</span>
-                                         <input type="text" id="tender-name" value="" />
-                                    </div>
-                                </div>
-                             </div> 
-                        </div>
-
-                        <div className='tender-group'>
-                                <span>  Application Deadline </span>
+                                <span>  Timeline From </span>
                                 <input type="date" id="tender-date" value="" />
                         </div>
 
+                        <div className='tender-group'>
+                         <span>  Application Deadline </span>
+                        <input type="date" id="tender-date" value="" />
+                         </div>
 
-                            
-                        
                        
                     </div>
 
-                    <div className='col-md-6'>
+                    <div  className=' col-xs-12 col-md-6'>
                         
                         <div className='tender-group'>
                             <span> Tender Category </span>
