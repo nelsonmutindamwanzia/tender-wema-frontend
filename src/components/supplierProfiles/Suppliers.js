@@ -4,17 +4,38 @@ import "./supplier.css";
 
 function Suppliers() {
     const [suppliers, setSuppliers] = useState([]);
+    const [filterQuery, setFilterQuery] = useState("")
 
     useEffect(() => {
         fetch("http://localhost:3000/suppliers")
             .then((response) => response.json())
-            .then((data) => setSuppliers(data));
-    }, []);
+            .then((data) => {
+                if (!filterQuery) {
+                    setSuppliers(data);
+                }
+                else {
+                    setSuppliers(
+                        data.filter((supplier) =>
+                            supplier.name.toLowerCase().includes(filterQuery.toLowerCase()))
+                    )
+                }
+            });
+    }, [filterQuery]);
 
     return (
         <div className="supplier-container" >
             {/* <SupSearchBar /> */}
             <br></br>
+            <input
+                type="text"
+                placeholder="Search Supplier"
+                onChange={(e) => {
+                    setFilterQuery(e.target.value);
+                    console.log(filterQuery);
+                }}
+                className="form-control mb-4"
+            />
+            
             <h5>Supplier Profiles</h5>
             <div className="cards-container" >
                 {suppliers.map((supplier) => {
