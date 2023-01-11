@@ -18,8 +18,6 @@ function App() {
       </Routes>
       <Footer/>
       </>
-      
-    
   )
       
 // import Home from './components/Home';
@@ -35,7 +33,6 @@ function App() {
 //       <Navbar/>
 //       <Login />
 //       <Signup />
-      
 //     </div>
 //   );
 }
