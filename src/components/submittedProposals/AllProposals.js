@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import '../supplierProfiles/supplier.css';
 
 function AllProposals() {
     const [allProposals, setAllProposals] = useState([]);
