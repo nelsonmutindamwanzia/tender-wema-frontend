@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import PublishedTender from './components/Publishtender'
 import TenderResult from './components/Tender-Results'
+import ActiveTenders from './components/Active-Tenders'
+
 
 // import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
@@ -18,6 +20,8 @@ root.render(
     <Route path="/" element={<App />} />
     <Route path="tenders/publish" element={<PublishedTender />} />
     <Route path="tenders/results" element={<TenderResult />} />
+    <Route path="tenders/active" element={<ActiveTenders />} />
+
     </Routes>
   </BrowserRouter>
 );
