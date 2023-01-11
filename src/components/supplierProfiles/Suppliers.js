@@ -4,8 +4,8 @@ import "./supplier.css";
 
 function Suppliers() {
     const [suppliers, setSuppliers] = useState([]);
-    const [filterQuery, setFilterQuery] = useState("")
-    const [searchInput, setSearchInput] = useState("");
+    const [filterQuery, setFilterQuery] = useState("");
+    // const [searchInput, setSearchInput] = useState("");
 
     useEffect(() => {
         fetch("https://tender-wema-production.up.railway.app/suppliers")
@@ -58,7 +58,7 @@ function Suppliers() {
                 onChange={handleSearch}
                 value={searchInput} /> */}
 
-            <br></br><br></br>
+            <br></br>
 
             <h5>Supplier Profiles</h5>
             <div className="cards-container" >
@@ -67,8 +67,8 @@ function Suppliers() {
                         <div className='row row-cols-1 row-cols-md-3 g-4'>
                             <div className='col'>
                                 <div className="card">
-                                    <div className="card-body">
-                                        <h5 className="card-title">{supplier.company_name} </h5>
+                                    <div className="card-body" key={supplier.id} >
+                                        <h6 className="card-title">{supplier.company_name} </h6>
                                         <p className="card-text">Email: <span>{supplier.email}</span></p>
                                         <p className="card-text">Telephone: <span>{supplier.company_telephone}</span></p>
                                         <p className="card-text">Address: <span>{supplier.company_address}</span></p>

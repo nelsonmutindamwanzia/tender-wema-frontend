@@ -6,8 +6,7 @@ import Navi from './components/Navi';
 import { Route, Routes } from 'react-router-dom';
 import Signup from './components/Signup';
 import SupplierPage from './components/supplierProfiles/SupplierPage';
-import Login from './components/login';
-import PublishedTender from './components/Publishtender';
+import AllProposals from './components/submittedProposals/AllProposals';
 
 function App() {
   return (
@@ -19,6 +18,7 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/suppliers' element={<SupplierPage/>}/>
         <Route path='/tenders/publish' element={<PublishedTender/>}/>
+        <Route path='/proposals' element={<AllProposals/>}/>
       </Routes>
       <Footer/>
       </>
