@@ -9,6 +9,7 @@ import Home from './components/Home';
 import { Navbar } from './components/Navbar';
 
 
+
 // ReactDOM.render(
 //   <Router>
 //     <Routes>
@@ -25,6 +26,9 @@ root.render(
       <Route path='/Home' element={<App/>}/>
       <Route path='/Sign Up' element={<Signup/>}/>
       <Route path='/Login' element={<Login/>}/>
+
+
+      
     </Routes>
   </Router>
   </React.StrictMode>

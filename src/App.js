@@ -4,6 +4,7 @@ import Login from './components/login'
 import { Navbar } from "./components/Navbar";
 import Signup from "./components/Signup";
 
+
 function App() {
   return (
     <div >
@@ -11,6 +12,7 @@ function App() {
       <Navbar/>
       <Login />
       <Signup />
+      
       
     </div>
   );
