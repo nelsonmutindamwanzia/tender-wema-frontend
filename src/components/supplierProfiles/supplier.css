@@ -46,7 +46,9 @@ body {
     background: #E4EDFF;
     border-radius: 20px;
 }
-#footer{
-    background-color: #ECF7FF ;
-	margin-top: auto;   
+.form-searchbar{
+    border-radius: 20px;
+    background-color: #E4EDFF;
+    width: 600px;
+    font-size: 16px;
 }
