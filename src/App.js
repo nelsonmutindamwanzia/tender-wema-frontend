@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router-dom';
 import Signup from './components/Signup';
 import Login from './components/login';
 import SupplierPage from './components/supplierProfiles/SupplierPage';
+import AllProposals from './components/submittedProposals/AllProposals';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/suppliers' element={<SupplierPage/>}/>
+        <Route path='/proposals' element={<AllProposals/>}/>
       </Routes>
       <Footer/>
       </>
