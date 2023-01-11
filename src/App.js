@@ -5,6 +5,7 @@ import Navi from './components/Navi';
 // import Navbar from './components/supplierProfiles/Navbar';
 import { Route, Routes } from 'react-router-dom';
 import Signup from './components/Signup';
+import SupplierPage from './components/supplierProfiles/SupplierPage';
 import Login from './components/login';
 
 function App() {
@@ -15,8 +16,9 @@ function App() {
         <Route path='/' element={<Landing/>}/>
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/login' element={<Login/>}/>
+        <Route path='/suppliers' element={<SupplierPage/>}/>
       </Routes>
-      <Footer/>
+      {/* <Footer/> */}
       </>
   )
       
