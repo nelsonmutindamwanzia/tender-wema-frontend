@@ -1,0 +1,27 @@
+
+.results-container{
+
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.single-tender {
+
+    background-color: #eaeeff;
+    padding: 15px;
+    border-radius: 20px;
+    width: 400px;
+    margin: 15px 0;
+
+}
+
+.single-tender button {
+
+    width: 200px;
+}
+
+
