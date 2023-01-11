@@ -6,7 +6,6 @@ import Navi from './components/Navi';
 import { Route, Routes } from 'react-router-dom';
 import Signup from './components/Signup';
 import Login from './components/login';
-import PublishedTender from './components/Publishtender';
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
         <Route path='/' element={<Landing/>}/>
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/login' element={<Login/>}/>
-        <Route path="/tenders/publish" element={<PublishedTender />} />
       </Routes>
       <Footer/>
       </>

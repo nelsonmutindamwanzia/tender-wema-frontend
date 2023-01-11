@@ -81,8 +81,9 @@ button.btn {
 }
 #footer{
     background-color: #ECF7FF ;
-   
+	margin-top: auto;   
 }
+
 
 
 /* modal edit */
