@@ -8,7 +8,7 @@ function Suppliers() {
     const [searchInput, setSearchInput] = useState("");
 
     useEffect(() => {
-        fetch("http://localhost:3000/suppliers")
+        fetch("https://tender-wema-production.up.railway.app/suppliers")
             .then((response) => response.json())
             .then((data) => {
                 if (!filterQuery) {
