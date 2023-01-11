@@ -38,7 +38,6 @@ function Suppliers() {
 
     return (
         <div className="supplier-container" >
-            {/* <SupSearchBar /> */}
             <br></br>
             <div class="search" >
                 <i class="fa fa-search"></i>
@@ -65,16 +64,6 @@ function Suppliers() {
             <div className="cards-container" >
                 {suppliers.map((supplier) => {
                     return (
-                        // <div className="card">
-                        //     <h5 className="card-header">{supplier.company_name} </h5>
-                        //     <div className="card-body">
-                        //         <p className="card-text">Company Email: <span>{supplier.email}</span> </p>
-                        //         <p className="card-text">Telephone: {supplier.company_telephone}</p>
-                        //         <p className="card-text">Address:   {supplier.company_address}</p>
-                        //         <a href="#" className="btn btn-primary">view</a>
-                        //     </div>
-                        // </div>
-
                         <div className='row row-cols-1 row-cols-md-3 g-4'>
                             <div className='col'>
                                 <div className="card">
