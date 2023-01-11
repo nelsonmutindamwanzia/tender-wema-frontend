@@ -48,3 +48,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 - [Backend Repository](https://github.com/nelsonmutindamwanzia/tender-wema-backend)
 
 # Tender Wema by Nelson Mutinda, Sheillah Wangala, Dyes Junior, Ann Mwangi and Collince Owinoh
+
+Added a new line
