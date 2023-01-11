@@ -12,7 +12,7 @@ import PublishedTender from './components/Publishtender';
 function App() {
   return (
       <>
-      {/* <Navi/> */}
+      <Navi/>
       <Routes>
         <Route path='/' element={<Landing/>}/>
         <Route path='/signup' element={<Signup/>}/>
@@ -20,7 +20,7 @@ function App() {
         <Route path='/suppliers' element={<SupplierPage/>}/>
         <Route path='/tenders/publish' element={<PublishedTender/>}/>
       </Routes>
-      {/* <Footer/> */}
+      <Footer/>
       </>
   )
       
