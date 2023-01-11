@@ -1,13 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
+
 .supplier-container {
     margin-left: 350px;
     margin-top: -550px;
     display: flexbox;
 }
+
 .cards-container {
     display: flex;
     justify-content: space-around;
@@ -46,11 +50,33 @@ body {
     background: #E4EDFF;
     border-radius: 20px;
 }
-.form-searchbar{
+
+.form-searchbar {
     border-radius: 20px;
     background-color: #E4EDFF;
-    width: 600px;
+    width: 680px;
     font-size: 16px;
     border-color: #E4EDFF;
+    padding: 8px;
+}
+
+.search {
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+}
+
+.search input {
+    color: blue;
+    height: 40px;
+    text-indent: 30px;
+    border: 2px solid #E4EDFF;
+
+}
+
+.search .fa-search {
     
+    position: absolute;
+    top: 20px;
+    left: 16px;
+
 }
