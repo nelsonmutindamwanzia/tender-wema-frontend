@@ -5,6 +5,7 @@ import "./supplier.css";
 function Suppliers() {
     const [suppliers, setSuppliers] = useState([]);
     const [filterQuery, setFilterQuery] = useState("")
+    const [searchInput, setSearchInput] = useState("");
 
     useEffect(() => {
         fetch("http://localhost:3000/suppliers")
@@ -16,27 +17,50 @@ function Suppliers() {
                 else {
                     setSuppliers(
                         data.filter((supplier) =>
-                            supplier.name.toLowerCase().includes(filterQuery.toLowerCase()))
+                            supplier.company_name.toLowerCase().includes(filterQuery.toLowerCase()))
                     )
                 }
             });
     }, [filterQuery]);
 
+    // const handleSearch = (e) => {
+    //     e.preventDefault();
+    //     setSearchInput(e.target.value);
+    // };
+
+    // if (searchInput.length > 0) {
+    //     suppliers.filter((supplier) => {
+    //         return supplier.company_name.match(searchInput);
+    //     });
+    // }
+
+
+
     return (
         <div className="supplier-container" >
             {/* <SupSearchBar /> */}
             <br></br>
-            <input
+            <div class="search" >
+                <i class="fa fa-search"></i>
+                <input
+                    type="text"
+                    placeholder="Search Supplier"
+                    onChange={(e) => {
+                        setFilterQuery(e.target.value);
+                        console.log(filterQuery);
+                    }}
+                    className="form-searchbar"
+                />
+            </div>
+
+            {/* <input
                 type="text"
-                placeholder="Search Supplier"
-                onChange={(e) => {
-                    setFilterQuery(e.target.value);
-                    console.log(filterQuery);
-                }}
-                className="form-searchbar"
-            />
+                placeholder="Search here"
+                onChange={handleSearch}
+                value={searchInput} /> */}
+
             <br></br><br></br>
-            
+
             <h5>Supplier Profiles</h5>
             <div className="cards-container" >
                 {suppliers.map((supplier) => {
