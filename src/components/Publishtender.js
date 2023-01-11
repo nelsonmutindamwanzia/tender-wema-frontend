@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/publishtender.css'
-import { FaClock, FaBolt, FaCheckDouble } from "react-icons/fa";
-import {GrDocumentPerformance} from "react-icons/gr";
+// import { FaClock, FaBolt, FaCheckDouble } from "react-icons/fa";
+// import {GrDocumentPerformance} from "react-icons/gr";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -13,14 +13,11 @@ function PublishedTender () {
         <div className='publish-container'>
             <div className='publish-navigation'>
 
-                Tender
-                
-
             </div>
 
             <div className='publish-content'>
 
-               <h1> Publish a Tender </h1> 
+               <h1><b>Publish a Tender</b></h1> 
 
                 <form className='publish-form'>
 

@@ -3,7 +3,7 @@ import React, { useState} from 'react'
 
 import loginImg from '../assets/Vector.png'
 // import backgrnd from '../assets/rec6.jpg'
-import validation from './Validation'
+// import validation from './Validation'
 
 
 
