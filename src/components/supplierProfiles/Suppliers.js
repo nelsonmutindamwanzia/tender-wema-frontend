@@ -33,8 +33,9 @@ function Suppliers() {
                     setFilterQuery(e.target.value);
                     console.log(filterQuery);
                 }}
-                className="form-control mb-4"
+                className="form-searchbar"
             />
+            <br></br><br></br>
             
             <h5>Supplier Profiles</h5>
             <div className="cards-container" >
