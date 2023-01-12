@@ -14,14 +14,22 @@
     background-color: #eaeeff;
     padding: 15px;
     border-radius: 20px;
-    width: 400px;
+    width: 450px;
     margin: 15px 0;
+
+}
+
+.single-tender td {
+
+    font-size: .9rem;
 
 }
 
 .single-tender button {
 
     width: 200px;
+
 }
+
 
 
