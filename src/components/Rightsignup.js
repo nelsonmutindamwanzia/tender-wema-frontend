@@ -6,10 +6,8 @@ const Rightsignup = () => {
   return (
     <div>
         <div>
-            <br/>
-            <br/>
-            <br/>
-            <Form style={{width:"80%", marginLeft:"10%", marginTop:"10%"}}>
+            <br />
+            <Form style={{width:"80%", marginLeft:"10%", marginTop:"1%"}}>
                 <Form.Group >
                     <Form.Label>Enter your email</Form.Label>
                     <Form.Control type="email" placeholder="Enter your email" />

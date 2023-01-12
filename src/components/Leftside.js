@@ -5,7 +5,10 @@ import {Image} from "react-bootstrap";
 
 const Rightside = () => {
   return (
+    
     <div>
+      <br/>
+      
         <Image src={loginImg} thumbnail style={{border:"none"}}/>
     </div>
   )
