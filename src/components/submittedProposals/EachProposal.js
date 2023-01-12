@@ -24,7 +24,7 @@ function EachProposal() {
     const showEachProposal = proposals.map(
         (proposal) =>
             proposal.id === parseInt(params.id) && (
-                <div>
+                <div className="each-proposal-container">
                     <div>
                         <h6>Proposal Status: <span class="badge bg-primary"> {proposal.status} </span> </h6>
                         <h4>Proposal Submitted by: {proposal.supplier.company_name} </h4>
