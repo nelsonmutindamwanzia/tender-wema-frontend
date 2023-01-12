@@ -56,7 +56,7 @@ function AllProposals() {
                                             <p className="card-text">Tender Name: <span>{proposal.tender.tender_name}</span></p>
                                             <p className="card-text">Proposal Amount: <span>{proposal.proposal_amount}</span></p>
                                             {/* <p className="card-text">Email: <span>{proposal.supplier.company_email}</span></p> */}
-                                            <span class="badge bg-primary">View</span>
+                                            <Link to={`/proposals/${proposal.id}`} ><span class="badge bg-primary">View</span></Link>
                                         </div>
                                     </div>
                                 </div>
