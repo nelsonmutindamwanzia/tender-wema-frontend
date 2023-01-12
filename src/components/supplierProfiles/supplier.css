@@ -13,14 +13,16 @@ body {
     display: flexbox;
     margin-bottom: 180px;
 }
+
 h5 {
     margin-left: -30px
 }
+
 .cards-container {
     display: flex;
     justify-content: space-around;
-    border: 20px; 
-    max-height: fit-content;  
+    border: 20px;
+    max-height: fit-content;
 }
 
 .card {
@@ -79,26 +81,45 @@ h5 {
 }
 
 .search .fa-search {
-    
+
     position: absolute;
     top: 20px;
     left: 16px;
 
 }
-.proposal-container{
+
+.proposal-container {
     margin-left: 280px;
     margin-top: -670px;
     margin-bottom: 180px;
 }
+
 .proposal-container h5 {
     margin-left: -70px
 }
-.proposal-card{
+
+.proposal-card {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    max-height: fit-content; 
+    max-height: fit-content;
 }
-.btn btn-primary{
+
+.btn btn-primary {
     font-size: 6px;
+    margin-top: auto;
 }
+
+.tenders-container {
+    margin-left: 280px;
+    margin-top: -670px;
+    margin-bottom: 180px;
+    justify-content: space-evenly;
+}
+.card-tender{
+    line-height: 10px;
+    padding-top: 5px;
+}
+.card-tender h6{
+    font-size: 13px;
+} 
