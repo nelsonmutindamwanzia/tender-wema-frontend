@@ -3,6 +3,7 @@
     margin: 0;
     outline: none;
     border: none;
+    bottom: border-box;
 }
 
 #root {
@@ -73,7 +74,7 @@ body {
 
 .tender-group input {
 
-    width: 250px;
+    width: 400px;
     padding: 15px;
     border-radius: 15px;
     background: white;
@@ -108,4 +109,52 @@ button {
     border-radius: 15px !important;
     display: block;
     margin: 30px auto !important; 
+}
+
+
+@media screen and (max-width:481px) {
+
+    .publish-navigation{
+    height: 100vh;
+    background-color: #130037;
+    width: 300px;
+    float: left;
+    display: none;
+}
+
+.publish-content {
+
+    /* float: left; */
+    width:100%;
+    /* background-color: #f9faff; */
+    /* height: 100vh; */
+    padding: 15px;
+/*      */
+
+}
+
+.tender-group input {
+
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    background: white;
+    float: left;
+    border: 1px solid transparent;
+
+}
+
+
+.tender-group span {
+
+    width: 100%;
+    display: block;
+    float: left;
+    font-weight: 600;
+    margin-bottom: 5px;
+
+}
+
+
+    
 }
