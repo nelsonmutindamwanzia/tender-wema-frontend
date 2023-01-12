@@ -72,6 +72,7 @@ function Suppliers() {
                                         <p className="card-text">Email: <span>{supplier.email}</span></p>
                                         <p className="card-text">Telephone: <span>{supplier.company_telephone}</span></p>
                                         <p className="card-text">Address: <span>{supplier.company_address}</span></p>
+                                        {/* <span class="badge bg-primary">View</span> */}
                                     </div>
                                 </div>
                             </div>

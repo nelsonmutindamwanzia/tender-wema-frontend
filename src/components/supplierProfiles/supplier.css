@@ -9,8 +9,9 @@ body {
 
 .supplier-container {
     margin-left: 280px;
-    margin-top: -550px;
+    margin-top: -680px;
     display: flexbox;
+    margin-bottom: 180px;
 }
 h5 {
     margin-left: -30px
@@ -18,15 +19,15 @@ h5 {
 .cards-container {
     display: flex;
     justify-content: space-around;
-    border: 20px;
-    flex-wrap: wrap;
+    border: 20px; 
+    max-height: fit-content;      flex-wrap: wrap;
 
 }
 
 .card {
     width: 300px;
     border-radius: 20px;
-    height: 250px;
+    height: 270px;
     margin: 4px;
 }
 
@@ -84,4 +85,21 @@ h5 {
     top: 20px;
     left: 16px;
 
+}
+.proposal-container{
+    margin-left: 280px;
+    margin-top: -670px;
+    margin-bottom: 180px;
+}
+.proposal-container h5 {
+    margin-left: -70px
+}
+.proposal-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-height: fit-content; 
+}
+.btn btn-primary{
+    font-size: 6px;
 }
