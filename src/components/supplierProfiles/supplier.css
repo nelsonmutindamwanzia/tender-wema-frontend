@@ -99,10 +99,8 @@ h5 {
 }
 
 .proposal-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    max-height: fit-content;
+    line-height: 12px;
+    padding-top: 10px;
 }
 
 .btn btn-primary {
@@ -116,6 +114,7 @@ h5 {
     margin-bottom: 180px;
     justify-content: space-evenly;
 }
+
 .card-tender{
     line-height: 10px;
     padding-top: 5px;
