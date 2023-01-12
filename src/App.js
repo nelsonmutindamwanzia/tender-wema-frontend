@@ -8,6 +8,7 @@ import Signup from './components/Signup';
 import Login from './components/login';
 import SupplierPage from './components/supplierProfiles/SupplierPage';
 import AllProposals from './components/submittedProposals/AllProposals';
+import Tenders from './components/Tenders/Tenders';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/suppliers' element={<SupplierPage/>}/>
         <Route path='/proposals' element={<AllProposals/>}/>
+        <Route path='/tenders' element={<Tenders/>}/>
       </Routes>
       <Footer/>
       </>
