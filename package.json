@@ -2,7 +2,7 @@
   "name": "tender-wema",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://tender-wema-production.up.railway.app",
+  
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.2.1",
     "@fortawesome/react-fontawesome": "^0.2.0",

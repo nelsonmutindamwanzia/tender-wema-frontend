@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Footer from './components/Footer';
 import Landing from './components/Landing';
 import Navi from './components/Navi';
@@ -13,13 +13,26 @@ import Login from './components/login';
 import PublishedTender from './components/Publishtender'
 
 function App() {
+
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    // auto-login
+    fetch("https://tender-wema-production.up.railway.app/me").then((r) => {
+      if (r.ok) {
+        r.json().then((user) => setUser(user));
+      }
+    });
+  }, []);
   return (
       <>
       <Navi/>
       <Routes>
         <Route path='/' element={<Landing/>}/>
-        <Route path='/signup' element={<Signup/>}/>
-        <Route path='/login' element={<Login/>}/>
+        if (!user) return (
+        <Route path='/signup' element={<Signup setUser={setUser} user={user}/>}/>
+        <Route path='/login' element={<Login onLogin={setUser}/>}/>
+        )
         <Route path='/suppliers' element={<SupplierPage/>}/>
         <Route path='/tenders/publish' element={<PublishedTender/>}/>
         <Route path='/proposals' element={<AllProposals/>}/>
