@@ -1,7 +1,6 @@
 import React from 'react'
 import Leftsignup from './Leftsignup'
 import Rightsignup from './Rightsignup'
-import {Form, Button} from 'react-bootstrap';
 import {  Row, Col} from 'react-bootstrap';
 
 const Signuptest = () => {

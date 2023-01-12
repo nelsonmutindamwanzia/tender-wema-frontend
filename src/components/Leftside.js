@@ -3,7 +3,7 @@ import loginImg from '../assets/draw2.svg'
 
 import {Image} from "react-bootstrap";
 
-const Rightside = () => {
+const Leftside = () => {
   return (
     <div>
         <Image src={loginImg} thumbnail style={{border:"none"}}/>
@@ -11,4 +11,4 @@ const Rightside = () => {
   )
 }
 
-export default Rightside
+export default Leftside;
