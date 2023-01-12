@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import SupplierSideBar from "../supplierProfiles/SupplierSideBar";
+import '../supplierProfiles/supplier.css';
 
 function Tenders() {
     const [tenders, setTenders] = useState([]);
@@ -21,7 +24,9 @@ function Tenders() {
     }, [filterQuery])
 
     return (
-        <div className="tenders-container">
+        <div>
+            <SupplierSideBar />
+        <div className="tenders-container">            
             <br></br>
             <div class="search" >
                 <i class="fa fa-search"></i>
@@ -43,12 +48,13 @@ function Tenders() {
                         <div className='row row-cols-1 row-cols-md-3 g-4'>
                             <div className='col'>
                                 <div className="card">
-                                    <div className="card-body" key={tender.id} >
+                                    <div className="card-tender" key={tender.id} >
                                         <h6 className="card-title">{tender.tender_name} </h6>
-                                        <p className="card-text">Tender Category: <span>{tender.tender_category}</span></p>
-                                        <p className="card-text">Tender Budget: <span>{tender.budget}</span></p>
-                                        <p className="card-text">Timeline: <span>{tender.timeline}</span></p>
-                                        <p className="card-text">Application Deadline: <span>{tender.application_deadline}</span></p>
+                                        <p className="card-text">Tender Category: {tender.tender_category}</p>
+                                        <p className="card-text">Tender Budget: {tender.budget}</p>
+                                        <p className="card-text">Timeline: {tender.timeline}</p>
+                                        <p className="card-text">Application Deadline: {tender.application_deadline}</p>
+                                        <p className="card-text">Description: {tender.tender_description}</p>
                                         <Link to={`/tenders/${tender.id}`} ><span class="badge bg-primary">View</span></Link>
                                     </div>
                                 </div>
@@ -61,6 +67,7 @@ function Tenders() {
                 })}
             </div>
 
+        </div>
         </div>
     )
 }
