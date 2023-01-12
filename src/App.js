@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router-dom';
 import Signup from './components/Signup';
 import SupplierPage from './components/supplierProfiles/SupplierPage';
 import AllProposals from './components/submittedProposals/AllProposals';
+import TenderResult from './components/Tender-Results';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/suppliers' element={<SupplierPage/>}/>
         <Route path='/tenders/publish' element={<PublishedTender/>}/>
         <Route path='/proposals' element={<AllProposals/>}/>
+        <Route path="tenders/results" element={<TenderResult />} />
       </Routes>
       <Footer/>
       </>

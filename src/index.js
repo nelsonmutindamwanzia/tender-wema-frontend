@@ -3,11 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import {BrowserRouter} from 'react-router-dom';
-import PublishedTender from './components/Publishtender'
-import TenderResult from './components/Tender-Results'
-
-// import reportWebVitals from './reportWebVitals';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,14 +10,6 @@ root.render(
       <React.StrictMode> 
         <App /> 
       </React.StrictMode> 
-    {/* <React.StrictMode> */}
-      {/* <App /> */}
-    {/* </React.StrictMode> */}
-    <Routes>
-    <Route path="/" element={<App />} />
-    <Route path="tenders/publish" element={<PublishedTender />} />
-    <Route path="tenders/results" element={<TenderResult />} />
-    </Routes>
   </BrowserRouter>
 );
 
