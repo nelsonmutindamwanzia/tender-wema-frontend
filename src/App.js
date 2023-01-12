@@ -9,8 +9,18 @@ import SupplierPage from './components/supplierProfiles/SupplierPage';
 import AllProposals from './components/submittedProposals/AllProposals';
 import TenderResult from './components/Tender-Results';
 import ActiveTenders from './components/Active-Tenders';
-import Login from './components/login';
+// import Login from './components/login';
 import PublishedTender from './components/Publishtender'
+import Leftside from './components/Leftside'
+
+//Trying new 
+import 'bootstrap/dist/css/bootstrap.css'
+import {Button, Alert, Row, Col} from 'react-bootstrap';
+import Rightside from './components/Rightside';
+import Rightsignup from './components/Rightsignup';
+import Leftsignup from './components/Leftsignup';
+import Signuptest from './components/Signuptest';
+import Logintest from './components/Logintest';
 
 function App() {
 
@@ -27,6 +37,7 @@ function App() {
   return (
       <>
       <Navi/>
+      
       <Routes>
         <Route path='/' element={<Landing/>}/>
         if (!user) return (
