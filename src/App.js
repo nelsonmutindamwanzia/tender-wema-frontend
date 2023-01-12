@@ -9,6 +9,8 @@ import SupplierPage from './components/supplierProfiles/SupplierPage';
 import AllProposals from './components/submittedProposals/AllProposals';
 import TenderResult from './components/Tender-Results';
 import ActiveTenders from './components/Active-Tenders';
+import Login from './components/login';
+import PublishedTender from './components/Publishtender'
 
 function App() {
   return (
@@ -21,8 +23,8 @@ function App() {
         <Route path='/suppliers' element={<SupplierPage/>}/>
         <Route path='/tenders/publish' element={<PublishedTender/>}/>
         <Route path='/proposals' element={<AllProposals/>}/>
-        <Route path="tenders/results" element={<TenderResult />} />
-        <Route path="tenders/active" element={<ActiveTenders />} />
+        <Route path="/tenders/results" element={<TenderResult />} />
+        <Route path="/tenders/active" element={<ActiveTenders />} />
       </Routes>
       <Footer/>
       </>
