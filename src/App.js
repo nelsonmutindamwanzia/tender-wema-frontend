@@ -10,7 +10,7 @@ import ActiveTenders from './components/Active-Tenders';
 import PublishedTender from './components/Publishtender'
 import Signuptest from './components/Signuptest';
 import Logintest from './components/Logintest';
-import 'bootstrap/dist/css/bootstrap.css'
+// import 'bootstrap/dist/css/bootstrap.css'
 
 function App() {
 
@@ -44,21 +44,7 @@ function App() {
       </>
   )
       
-// import Home from './components/Home';
-// import Login from './components/login'
 
-// import { Navbar } from "./components/Navbar";
-// import Signup from "./components/Signup";
-
-// function App() {
-//   return (
-//     <div >
-//       {/* <Home/> */}
-//       <Navbar/>
-//       <Login />
-//       <Signup />
-//     </div>
-//   );
 }
 
 export default App;

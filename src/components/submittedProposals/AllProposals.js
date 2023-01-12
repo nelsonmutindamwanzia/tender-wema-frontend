@@ -6,7 +6,7 @@ function AllProposals() {
     const [filterQuery, setFilterQuery] = useState("");
 
     useEffect(() => {
-        fetch("http://localhost:3000/proposals")
+        fetch("https://tender-wema-production.up.railway.app/proposals")
             .then((response) => response.json())
             .then((data) => {
                 if (!filterQuery) {

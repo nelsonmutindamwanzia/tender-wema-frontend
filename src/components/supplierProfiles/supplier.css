@@ -19,6 +19,7 @@ h5 {
     display: flex;
     justify-content: space-around;
     border: 20px;
+    flex-wrap: wrap;
 
 }
 
