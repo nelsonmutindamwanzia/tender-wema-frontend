@@ -31,7 +31,7 @@ const Leftside = () => {
   return (
     <div>
             
-            <Form onSubmit={handleSubmit} style={{width:"80%", marginLeft:"10%", marginTop:"10%"}}>
+            <Form onSubmit={handleSubmit} style={{width:"50%", marginLeft:"10%", marginTop:"10%"}}>
                 <Form.Group >
                     <Form.Label>Enter your email</Form.Label>
                     <Form.Control type="email" 
@@ -51,7 +51,7 @@ const Leftside = () => {
                         placeholder="Enter your password" />
                     {/* {errors.password && <p>{errors.password}</p>} */}
                 </Form.Group>
-                <Button style={{marginTop:"5%"}}type="submit">Login</Button>
+                <Button style={{marginTop:"5%", width:"30%"}}type="submit">Login</Button>
             </Form>
         </div>
   )
