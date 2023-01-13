@@ -23,7 +23,7 @@ function Wlogin ({onLogin})
         }).then((r) => {
         if (r.ok) {
         r.json().then((user) => onLogin(user)) 
-        navigate("/suppliers");
+        navigate("/tenders");
         }else {
         r.json().then((err) => setError(err.errors))
         navigate("/login");
@@ -62,7 +62,7 @@ function Wlogin ({onLogin})
                         <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
                         <label class="form-check-label" for="exampleCheck1">Remember me</label>
                     </div>
-                    <button type="submit" class="btn">Submit</button>
+                    <button type="submit" class="btn">Login</button>
                     {error && <p style={{ color: 'red' }}>{error}</p>}
                 </form>
                 </div>
