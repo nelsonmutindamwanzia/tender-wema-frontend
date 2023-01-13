@@ -8,11 +8,12 @@ import AllProposals from './components/submittedProposals/AllProposals';
 import TenderResult from './components/Tender-Results';
 import ActiveTenders from './components/Active-Tenders';
 import PublishedTender from './components/Publishtender'
-import Signuptest from './components/Signuptest';
+// import Signuptest from './components/Signuptest';
 // import Logintest from './components/Logintest';
 // import 'bootstrap/dist/css/bootstrap.css'
 import Tenders from './components/Tenders/Tenders';
 import Wlogin from './components/Wlogin';
+import Wsignup from './components/Wsignup';
 
 function App() {
 
@@ -33,7 +34,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Landing/>}/>
         if (!user) return (
-        <Route path='/signup' element={<Signuptest setUser={setUser} user={user}/>}/>
+        <Route path='/signup' element={<Wsignup setUser={setUser} user={user}/>}/>
         <Route path='/login' element={<Wlogin onLogin={setUser}/>}/>
         )
         <Route path='/suppliers' element={<SupplierPage/>}/>

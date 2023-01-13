@@ -13,12 +13,12 @@
 1. ReactJS 
 2. CSS
 3. Figma (design)
-4. Vercel (deployment)
+4. Netlify (deployment)
 
 ## Project Setup
 To run this project, one must have either of the following;
 
-1. The live Vercel link to this repository available on both the project repository About and at the end of this README file.
+1. The live Netlify link to this repository available [here](https://tender-wema.netlify.app/), on the project repository About section or at the end of this README file.
 2. Fork and clone this repository and have Visual Studio Code (Windows) or Code (Linux) and run the following commands in the local project directory :
     - Run "npm install" to install the project dependencies.
     - Run "npm install react-router-dom" to install a compatible version of react-router-dom.
@@ -41,12 +41,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 5. [Collince Owinoh](https://github.com/OtienohOwinoh)
 
 ## Deployed Live-Link
-- Frontend is coming soon.
-- [Backend](https://tender-wema-production.up.railway.app)
+- [Frontend - Netlify](https://tender-wema.netlify.app/)
+- [Backend - Railway App](https://tender-wema-production.up.railway.app)
 
 ## Backend Repository Link
 - [Backend Repository](https://github.com/nelsonmutindamwanzia/tender-wema-backend)
 
 # Tender Wema by Nelson Mutinda, Sheillah Wangala, Dyes Junior, Ann Mwangi and Collince Owinoh
-
-Added a new line

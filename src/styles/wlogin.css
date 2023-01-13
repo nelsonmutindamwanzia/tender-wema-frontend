@@ -18,8 +18,13 @@ label.form-label{
 }
 
 input {
-    font-size: 10px;
+    font-size: 16px;
     color: #295CC5;
+}
+::placeholder {
+    color: #03266b;
+    font-size: 14px;
+
 }
 
 div#emailHelp {
