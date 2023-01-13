@@ -20,7 +20,7 @@ const Rightside = ({onLogin}) => {
         }).then((r) => {
         if (r.ok) {
         r.json().then((user) => onLogin(user)) 
-        navigate("/suppliers");
+        navigate("/tenders");
         }else {
         r.json().then((err) => setError(err.errors))
         navigate("/login");
