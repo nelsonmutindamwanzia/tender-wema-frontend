@@ -23,6 +23,7 @@ h5 {
     justify-content: space-around;
     border: 20px;
     max-height: fit-content;
+    flex-wrap: wrap;
 }
 
 .card {
