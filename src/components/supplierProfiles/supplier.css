@@ -1,0 +1,126 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap"); */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+}
+
+.supplier-container {
+    margin-left: 280px;
+    margin-top: -680px;
+    display: flexbox;
+    margin-bottom: 180px;
+}
+
+h5 {
+    margin-left: -30px
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    border: 20px;
+    max-height: fit-content;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    border-radius: 20px;
+    height: 270px;
+    margin: 4px;
+}
+
+.card-header {
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+}
+
+.card-text {
+    font-size: 12px;
+    display: inline-block;
+}
+
+.card-text span {
+    font-size: 12px;
+}
+
+.input-group {
+    /* position: absolute; */
+    width: 917px;
+    height: 62px;
+    left: 316px;
+    top: 27px;
+    background: #E4EDFF;
+    border-radius: 20px;
+}
+
+.form-searchbar {
+    border-radius: 20px;
+    background-color: #E4EDFF;
+    width: 600px;
+    font-size: 16px;
+    border-color: #E4EDFF;
+    padding: 8px;
+    margin-left: -20px
+}
+
+.search {
+    position: relative;
+    box-shadow: 0 0 0px rgba(51, 51, 51, .1);
+}
+
+.search input {
+    color: blue;
+    height: 40px;
+    text-indent: 30px;
+    border: 2px solid #E4EDFF;
+
+}
+
+.search .fa-search {
+
+    position: absolute;
+    top: 20px;
+    left: 16px;
+
+}
+
+.proposal-container {
+    margin-left: 280px;
+    margin-top: -670px;
+    margin-bottom: 180px;
+    flex-wrap: wrap;
+}
+
+.proposal-container h5 {
+    margin-left: -30px;
+}
+
+.proposal-card {
+    line-height: 12px;
+    padding-top: 10px;
+}
+
+.btn btn-primary {
+    font-size: 6px;
+    margin-top: auto;
+}
+
+.tenders-container {
+    margin-left: 280px;
+    margin-top: -670px;
+    margin-bottom: 180px;
+    justify-content: space-evenly;
+}
+
+.card-tender{
+    line-height: 10px;
+    padding-top: 5px;
+}
+.card-tender h6{
+    font-size: 13px;
+} 
