@@ -20,7 +20,8 @@ h5 {
     display: flex;
     justify-content: space-around;
     border: 20px; 
-    max-height: fit-content;      flex-wrap: wrap;
+    max-height: fit-content;      
+    flex-wrap: wrap;
 
 }
 
@@ -90,15 +91,17 @@ h5 {
     margin-left: 280px;
     margin-top: -670px;
     margin-bottom: 180px;
+    flex-wrap: wrap;
 }
 .proposal-container h5 {
-    margin-left: -70px
+    margin-left: -30px;
 }
 .proposal-card{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     max-height: fit-content; 
+
 }
 .btn btn-primary{
     font-size: 6px;
