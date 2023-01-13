@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/landnnav.css'
 import landingimg from '../assets/landingimg2.png'
 import aboutus1 from '../assets/aboutus1.png'
 import aboutus3 from '../assets/aboutus3.png'
@@ -31,7 +32,7 @@ function Landing() {
             
                                         <div className="projcard projcard-blue">
                                             <div className="projcard-innerbox">
-                                            <img className="projcard-img" src={aboutus1}/>
+                                            <img className="projcard-img" src={aboutus1} alt='pic one on aboutus'/>
                                             <div className="projcard-textbox">
                                                 <div className="projcard-title">About the Platform</div>
                                                 {/* <div className="projcard-subtitle">Lorem Ipsum dolor</div> */}
@@ -45,7 +46,7 @@ function Landing() {
 
                                         <div className="projcard projcard-red">
                                             <div className="projcard-innerbox">
-                                            <img className="projcard-img" src={aboutus3}/>
+                                            <img className="projcard-img" src={aboutus3} alt='pic two on aboutus'/>
                                             <div className="projcard-textbox">
                                                 <div className="projcard-title">Main goals</div>
                                                 <div className="projcard-bar"></div>
