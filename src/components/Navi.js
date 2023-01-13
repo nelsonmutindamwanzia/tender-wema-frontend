@@ -70,7 +70,6 @@ function Navi() {
                             </div>
                         </div>
                 </div>
-                <a className="nav-link" href="#">Tenders</a>
                 <a className="nav-link" href="/signup">Sign Up</a>
                 <a className="nav-link" href="/login">Login</a>
               </div>
