@@ -37,7 +37,7 @@ button.btn {
     /* border-radius:10%; */
 
 }
-.card {
+div.card {
     background-color: #D1E3FF;
     width: 351px;
     height: 234px;
@@ -46,16 +46,16 @@ button.btn {
     border: 0;
 
 }
-.card-icon {
+p.card-icon {
     text-align: center;
 }
-.card-title{
+h5.card-title{
     font-weight: bolder;
     text-align: center;
     font-size: 24px;
 
 }
-.card-text{
+p.card-text{
     font-weight: lighter;
     text-align: center;
     font-size: 18px;
