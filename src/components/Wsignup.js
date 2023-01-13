@@ -70,8 +70,8 @@ function Wsignup()
                         class="form-control" id="exampleInputPassword1"/>
                     </div>
                     <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Enter your company password</label>
-                            <input type="password" placeholder="xxxxx" 
+                            <label for="exampleInputPassword1" class="form-label">Enter your company name</label>
+                            <input type="text" placeholder="xxxxx" 
                         onChange={(e) => setCompany_Name(e.target.value)}
                         value={company_name}
                         class="form-control" id="exampleInputPassword1"/>
@@ -86,7 +86,7 @@ function Wsignup()
                     <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Company Address</label>
                             <input type="text" placeholder="xxxx" 
-                        onChange={(e) => setCompany_Telephone(e.target.value)}
+                        onChange={(e) => setCompany_Address(e.target.value)}
                         value={company_address}
                         class="form-control" id="exampleInputEmail1"/>
                     </div>
