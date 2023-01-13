@@ -11,6 +11,7 @@ import PublishedTender from './components/Publishtender'
 import Signuptest from './components/Signuptest';
 import Logintest from './components/Logintest';
 // import 'bootstrap/dist/css/bootstrap.css'
+import Tenders from './components/Tenders/Tenders';
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
         <Route path='/proposals' element={<AllProposals/>}/>
         <Route path="/tenders/results" element={<TenderResult />} />
         <Route path="/tenders/active" element={<ActiveTenders />} />
+        <Route path='/tenders' element={<Tenders/>}/>
       </Routes>
       <Footer/>
       </>

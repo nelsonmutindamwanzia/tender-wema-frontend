@@ -50,13 +50,14 @@ function AllProposals() {
                             <div className='row row-cols-1 row-cols-md-3 g-4'>
                                 <div className='col'>
                                     <div className="card">
-                                        <div className="card-body" key={proposal.id} >
+                                        <div className="proposal-card" key={proposal.id} >
                                             <h6 className="card-title">{proposal.supplier.company_name} </h6>
-                                            <p className="card-text">Tender ID: <span>{proposal.tender_id}</span></p>
-                                            <p className="card-text">Tender Name: <span>{proposal.tender.tender_name}</span></p>
-                                            <p className="card-text">Proposal Amount: <span>{proposal.proposal_amount}</span></p>
-                                            {/* <p className="card-text">Email: <span>{proposal.supplier.company_email}</span></p> */}
-                                            <span class="badge bg-primary">View</span>
+                                            <p className="card-text">Tender ID: {proposal.tender_id}</p>
+                                            <p className="card-text">Tender Name: {proposal.tender.tender_name}</p>
+                                            <p className="card-text">Proposal Amount: {proposal.proposal_amount}</p>
+                                            <p className="card-text">Email: {proposal.supplier.email} <span>{proposal.supplier.company_email}</span></p>
+                                            
+                                            <Link to={`/proposals/${proposal.id}`} ><span class="badge bg-primary">View</span></Link>
                                         </div>
                                     </div>
                                 </div>

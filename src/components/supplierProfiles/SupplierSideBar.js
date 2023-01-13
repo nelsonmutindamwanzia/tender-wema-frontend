@@ -15,17 +15,17 @@ const SidebarData = [
     cName: 'nav-text'
   },
   {
-    title: 'Publish Tender',
-    path: '/PublishTender',
-    icon: <IoIcons.IoIosPaper />,
-    cName: 'nav-text'
-  },
-  {
     title: 'All Tenders',
     path: '/tenders',
     icon: <FaIcons.FaCartPlus />,
     cName: 'nav-text'
   },
+  {
+    title: 'Publish Tender',
+    path: '/PublishTender',
+    icon: <IoIcons.IoIosPaper />,
+    cName: 'nav-text'
+  }, 
   {
     title: 'Supplier Profiles',
     path: '/suppliers',
