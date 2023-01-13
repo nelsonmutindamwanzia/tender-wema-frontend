@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/landnnav.css'
 import landingimg from '../assets/landingimg2.png'
 import aboutus1 from '../assets/aboutus1.png'
 import aboutus3 from '../assets/aboutus3.png'
