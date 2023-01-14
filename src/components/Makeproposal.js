@@ -13,7 +13,8 @@ function PublishedTender () {
 
     return (
         
-        <div className='publish-container'>
+        <div>
+            <div className='publish-container'>
             <div className='publish-navigation'>
 
                 Dyes junior 
@@ -48,12 +49,12 @@ function PublishedTender () {
 
                         <div className='tender-group'>
                             <span>  Bank Statement </span>
-                              <input type="file" id="tender-address" />
+                              <input type="url" id="tender-address" />
                         </div>
 
                         <div className='tender-group'>
                                 <span>  Tax Compliance </span>
-                                <input type="file" id="tender-date" />
+                                <input type="url" id="tender-date" />
                         </div>
 
                         {/* <div className='tender-group'>
@@ -72,11 +73,11 @@ function PublishedTender () {
                         </div>
                         <div className='tender-group'>
                             <span> Company licence </span>
-                            <input type="number" id="tender-budget" />
+                            <input type="url" id="tender-budget" />
                         </div>
                         <div className='tender-group'>
                             <span>  Council Registration </span>
-                            <input type="number" id="tender-phone" />
+                            <input type="url" id="tender-phone" />
                         </div>
 
                         <div className='tender-group'>
@@ -110,6 +111,7 @@ function PublishedTender () {
             </div>
 
 
+        </div>
         </div>
     )
 
