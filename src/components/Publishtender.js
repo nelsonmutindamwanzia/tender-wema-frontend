@@ -1,8 +1,8 @@
 import React from 'react'
-// import '../styles/publishtender.css'
-// import { FaClock, FaBolt, FaCheckDouble } from "react-icons/fa";
-// import {GrDocumentPerformance} from "react-icons/gr";
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/publishtender.css'
+import { FaClock, FaBolt, FaCheckDouble } from "react-icons/fa";
+import {GrDocumentPerformance} from "react-icons/gr";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function PublishedTender () {
@@ -13,11 +13,14 @@ function PublishedTender () {
         <div className='publish-container'>
             <div className='publish-navigation'>
 
+                Tender
+                
+
             </div>
 
             <div className='publish-content'>
 
-               <h1><b>Publish a Tender</b></h1> 
+               <h1> Publish a Tender </h1> 
 
                 <form className='publish-form'>
 
@@ -41,36 +44,19 @@ function PublishedTender () {
                         </div>
 
                         <div className='tender-group'>
-                             <span> Timeline </span>
-                             <div className='timeline-container'>
-                                <div className='row'>
-                                    <div className='col-md-6'>
-
-                                         <span>From</span>
-                                        <input type="text" id="tender-name" value="" />
-
-                                    </div>
-
-                                    <div className='col-md-6'>
-                                         <span>To</span>
-                                         <input type="text" id="tender-name" value="" />
-                                    </div>
-                                </div>
-                             </div> 
-                        </div>
-
-                        <div className='tender-group'>
-                                <span>  Application Deadline </span>
+                                <span>  Timeline From </span>
                                 <input type="date" id="tender-date" value="" />
                         </div>
 
+                        <div className='tender-group'>
+                         <span>  Application Deadline </span>
+                        <input type="date" id="tender-date" value="" />
+                         </div>
 
-                            
-                        
                        
                     </div>
 
-                    <div className='col-md-6'>
+                    <div  className=' col-xs-12 col-md-6'>
                         
                         <div className='tender-group'>
                             <span> Tender Category </span>
