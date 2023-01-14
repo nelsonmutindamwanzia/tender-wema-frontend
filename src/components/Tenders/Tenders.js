@@ -42,24 +42,20 @@ function Tenders() {
             </div>
             <br></br>
             <h5>All Tenders</h5>
-            <div className="cards-container" >
+            <div className="tenders-cards-container" >
                 {tenders.map((tender) => {
                     return (
-                        <div className='row row-cols-1 row-cols-md-3 g-4'>
-                            <div className='col'>
-                                <div className="card">
-                                    <div className="card-tender" key={tender.id} >
-                                        <h6 className="card-title">{tender.tender_name} </h6>
-                                        <p className="card-text">Tender Category: {tender.tender_category}</p>
-                                        <p className="card-text">Tender Budget: {tender.budget}</p>
-                                        <p className="card-text">Timeline: {tender.timeline}</p>
-                                        <p className="card-text">Application Deadline: {tender.application_deadline}</p>
-                                        <p className="card-text">Description: {tender.tender_description}</p>
+                        <div>
+                             <div className="tenders-card" key={tender.id} >
+                                        <h5>{tender.tender_name} </h5>
+                                        <h6>Tender Category: <strong>{tender.tender_category}</strong></h6>
+                                        <h6>Tender Budget: <strong>{tender.budget}</strong></h6>
+                                        <h6>Timeline: <strong>{tender.timeline}</strong></h6>
+                                        <h6>Application Deadline: <strong> {tender.application_deadline}</strong></h6>
+                                        {/* <p>Description: {tender.tender_description}</p> */}
                                         <Link to={`/tenders/${tender.id}`} ><span class="badge bg-primary">View</span></Link>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
 
 
                     )
