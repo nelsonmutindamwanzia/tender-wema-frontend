@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import PublishedTender from './components/Publishtender'
+import Makeproposal from './components/Makeproposal'
 // import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
@@ -15,6 +16,7 @@ root.render(
     <Routes>
     <Route path="/" element={<App />} />
     <Route path="tenders/publish" element={<PublishedTender />} />
+    <Route path="tenders/makeproposal" element={<Makeproposal />} />
     </Routes>
   </BrowserRouter>
 );

@@ -12,6 +12,7 @@
     "bootstrap": "^5.2.3",
     "package.json": "^2.0.1",
     "react": "^18.2.0",
+    "react-bootstrap-icons": "^1.10.2",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-router": "^6.6.2",
@@ -21,8 +22,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "PORT=4000 react-scripts start",
-    "build": "react-scripts build",
+    "start": "PORT=3000 react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

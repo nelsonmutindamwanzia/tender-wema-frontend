@@ -1,6 +1,8 @@
+import React from 'react';
 import Footer from './components/Footer';
 import Landing from './components/Landing';
 import Navi from './components/Navi';
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
@@ -8,6 +10,7 @@ function App() {
       <Navi/>
       <Landing/>
       <Footer/>
+      {/* <Sidebar/> */}
     </div>
   );
 }
