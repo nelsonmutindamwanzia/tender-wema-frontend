@@ -1,53 +1,76 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap"); */
-
-body {
+ .supplier-page{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     max-width: fit-content;
+    margin-left: 230px;
+    margin-top: -660px;
+    margin-bottom: 50px;
 }
-
-.supplier-container {
-    margin-left: 280px;
-    margin-top: -680px;
-    display: flexbox;
-    margin-bottom: 180px;
-}
-
-h5 {
-    margin-left: -30px
-}
-
-.cards-container {
+.supplier-cards-container{
     display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    flex-wrap: wrap;
     justify-content: space-around;
-    border: 20px;
-    max-height: fit-content;
+}
+
+.supplier-card{
+    width: 280px;
+    height: 260px;
+    background-color: #E4EDFF;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;   
+}
+.supplier-card h6{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.supplier-card p{
+    font-size: 16px;
+}
+
+.proposal-container {
+    margin-left: 280px;
+    margin-top: -670px;
+    margin-bottom: 50px;
+    
+}
+
+.proposal-cards-container{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
     flex-wrap: wrap;
 }
-
-.card {
+.proposal-card{
     width: 300px;
-    border-radius: 20px;
     height: 270px;
-    margin: 4px;
+    background-color: #E4EDFF;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px; 
+    line-height: 12px;
 }
-
-.card-header {
-    font-size: 20px;
-    font-weight: bolder;
-    color: black;
+.proposal-card h5{
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
 }
-
-.card-text {
-    font-size: 12px;
-    display: inline-block;
+.proposal-card h6{
+    font-size: 15px;
 }
-
-.card-text span {
-    font-size: 12px;
+.proposal-card h6 strong{
+    font-size: 13px;
 }
-
+.proposal-card p{
+    font-size: 16px;
+    
+}
 .input-group {
     /* position: absolute; */
     width: 917px;
@@ -65,7 +88,8 @@ h5 {
     font-size: 16px;
     border-color: #E4EDFF;
     padding: 8px;
-    margin-left: -20px
+    margin-left: 20px
+
 }
 
 .search {
@@ -88,39 +112,44 @@ h5 {
     left: 16px;
 
 }
-
-.proposal-container {
-    margin-left: 280px;
-    margin-top: -670px;
-    margin-bottom: 180px;
-    flex-wrap: wrap;
-}
-
-.proposal-container h5 {
-    margin-left: -30px;
-}
-
-.proposal-card {
-    line-height: 12px;
-    padding-top: 10px;
-}
-
 .btn btn-primary {
     font-size: 6px;
     margin-top: auto;
 }
 
 .tenders-container {
-    margin-left: 280px;
+    margin-left: 250px;
     margin-top: -670px;
-    margin-bottom: 180px;
-    justify-content: space-evenly;
+    margin-bottom: 50px;
 }
-
-.card-tender{
-    line-height: 10px;
-    padding-top: 5px;
+.tenders-cards-container{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 }
-.card-tender h6{
-    font-size: 13px;
-} 
+.tenders-card{
+    width: 320px;
+    height: 300px;
+    background-color: #E4EDFF;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px; 
+    line-height: 12px;
+}
+.tenders-card h5{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.tenders-card h6{
+    font-size: 16px;
+}
+.tenders-card h6 strong{
+    font-size: 16px;
+}
+.tenders-card span{
+    float: right;
+    margin-top: auto;
+}

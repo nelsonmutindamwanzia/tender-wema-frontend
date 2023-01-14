@@ -14,7 +14,7 @@ function EachProposal() {
     const [status, setStatus] = useState("false");
 
     useEffect(() => {
-        fetch("http://localhost:3000/proposals")
+        fetch(`http://localhost:3000/proposals`)
             .then((response) => response.json())
             .then((data) => {
                 setProposals(data);
@@ -56,7 +56,7 @@ function EachProposal() {
     return (
         <div>
             <p>teender</p>
-            {showEachProposal}
+            {/* {showEachProposal} */}
         </div>
     )
 
