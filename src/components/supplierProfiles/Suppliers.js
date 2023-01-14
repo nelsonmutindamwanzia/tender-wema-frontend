@@ -37,7 +37,7 @@ function Suppliers() {
 
 
     return (
-        <div className="supplier-container" >
+        <div className="supplier-page" >
             <br></br>
             <div class="search" >
                 <i class="fa fa-search"></i>
@@ -61,23 +61,18 @@ function Suppliers() {
             <br></br>
 
             <h5>Supplier Profiles</h5>
-            <div className="cards-container" >
+            <div className="supplier-cards-container" >
                 {suppliers.map((supplier) => {
                     return (
-                        <div className='row row-cols-1 row-cols-md-3 g-4'>
-                            <div className='col'>
-                                <div className="card">
-                                    <div className="card-body" key={supplier.id} >
-                                        <h6 className="card-title">{supplier.company_name} </h6>
-                                        <p className="card-text">Email: <span>{supplier.email}</span></p>
-                                        <p className="card-text">Telephone: <span>{supplier.company_telephone}</span></p>
-                                        <p className="card-text">Address: <span>{supplier.company_address}</span></p>
-                                        {/* <span class="badge bg-primary">View</span> */}
-                                    </div>
-                                </div>
+                        <div className="box-card">
+                            <div className="supplier-card" key={supplier.id} >
+                                <h6> {supplier.company_name} </h6>
+                                <p>Email: {supplier.email}</p>
+                                <p>Telephone: {supplier.company_telephone}</p>
+                                <p>Address: {supplier.company_address}</p>
+                                {/* <span class="badge bg-primary">View</span> */}
                             </div>
                         </div>
-
 
                     )
 
