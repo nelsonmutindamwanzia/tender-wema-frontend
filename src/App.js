@@ -23,8 +23,8 @@ function App() {
       <Navi/>
       <Routes>
         <Route path='/' element={<Landing/>}/>
-        <Route path='/signup' element={<Wsignup setUser={setUser} user={user}/>}/>
-        <Route path='/login' element={<Wlogin onLogin={setUser}/>}/>
+        <Route path='/signup' element={<Wsignup />}/>
+        <Route path='/login' element={<Wlogin />}/>
         <Route path='/suppliers' element={<Suppliers/>}/>
         <Route path='/tenders/publish' element={<PublishedTender/>}/>
         <Route path='/proposals' element={<AllProposals/>}/>
