@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import * as IoIcons from 'react-icons/io';
 import './supplierSidebar.css';
 import { IconContext } from 'react-icons';
+import { IconName } from "react-icons/io";
 
 
 const SidebarData = [
@@ -41,7 +42,13 @@ const SidebarData = [
   {
     title: 'Evaluate Proposals',
     path: '/evaluation',
-    icon: <IoIcons.IoMdHelpCircle />,
+    icon: <IoIcons.IoMdGitCompare />,
+    cName: 'nav-text'
+  },
+  {
+    title: 'Logout',
+    path: '/logout',
+    icon: <IoIcons.IoMdLogOut />,
     cName: 'nav-text'
   }
 ];
@@ -101,8 +108,6 @@ function SupplierSideBar () {
             })}
           </ul>
         </div>
-
-
     </>
   );
 }

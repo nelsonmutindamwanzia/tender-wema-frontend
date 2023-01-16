@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./supplier.css";
+import SupplierSideBar from "./SupplierSideBar";
 //import SupSearchBar from "./SupSearchBar";
 
 function Suppliers() {
@@ -8,7 +9,7 @@ function Suppliers() {
     // const [searchInput, setSearchInput] = useState("");
 
     useEffect(() => {
-        fetch("https://tender-wema-production.up.railway.app/suppliers")
+        fetch("http://localhost:3000/suppliers")
             .then((response) => response.json())
             .then((data) => {
                 if (!filterQuery) {
@@ -37,6 +38,8 @@ function Suppliers() {
 
 
     return (
+        <>
+        <SupplierSideBar />
         <div className="supplier-page" >
             <br></br>
             <div class="search" >
@@ -79,7 +82,7 @@ function Suppliers() {
                 })}
             </div>
         </div>
-
+        </>
     )
 
 }
