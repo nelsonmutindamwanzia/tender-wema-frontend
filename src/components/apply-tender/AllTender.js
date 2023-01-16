@@ -48,10 +48,11 @@ function AllTenders() {
                             <div>
                                 <div className="bidtenders-card" key={tender.id} >
                                     <h5>{tender.tender_name} </h5>
-                                    <h6>Tender Category: <strong>{tender.tender_category}</strong></h6>
-                                    <h6>Timeline: <strong>{tender.timeline}</strong></h6>
-                                    <h6>Application Deadline: <strong> {tender.application_deadline}</strong></h6>
-                                    <p>Description: {tender.tender_description}</p>
+                                    <p>Application Status: <span class="badge bg-secondary"> {tender.status} </span></p>
+                                    <p>Tender Category: <strong>{tender.tender_category}</strong></p>
+                                    <p>Timeline: <strong>{tender.timeline}</strong></p>
+                                    <p>Application Deadline: <strong> {tender.application_deadline}</strong></p>
+                                    <p><strong>Description: </strong>{tender.tender_description}</p>
                                     <Link to={`/tenders/${tender.id}`} ><span class="badge bg-primary">Submit Proposal</span></Link>
                                 </div>
                             </div>
