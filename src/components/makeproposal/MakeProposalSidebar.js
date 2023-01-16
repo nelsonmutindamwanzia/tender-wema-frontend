@@ -23,15 +23,21 @@ const SidebarData = [
   },
   {
     title: 'Active Tenders',
-    path: '/activetenders',
+    path: '/tenders/active',
     icon: <IoIcons.IoIosPaper />,
     cName: 'nav-text'
   }, 
   
   {
     title: 'Tender Results',
-    path: '/tenderresults',
+    path: '/tenders/results',
     icon: <IoIcons.IoMdHelpCircle />,
+    cName: 'nav-text'
+  },
+  {
+    title: 'Logout',
+    path: '/logout',
+    icon: <IoIcons.IoMdLogOut />,
     cName: 'nav-text'
   }
 ];
