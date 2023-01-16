@@ -15,6 +15,7 @@ import Wlogin from './components/Wlogin';
 import Wsignup from './components/Wsignup';
 import Suppliers from './components/supplierProfiles/Suppliers';
 import EachProposal from './components/submittedProposals/EachProposal';
+import EachTender from './components/Tenders/EachTender';
 
 function App() {
 
@@ -43,7 +44,7 @@ function App() {
         <Route path='/proposals' element={<AllProposals/>}/>
         <Route path='/proposals/:id' element={<EachProposal/>}/>
         <Route path='/tenders' element={<Tenders/>}/>
-        {/* <Route path='/tenders/:id' element={<EachTender/>}/> */}
+        <Route path='/tenders/:id' element={<EachTender/>}/>
         <Route path="/tenders/results" element={<TenderResult />} />
         <Route path="/tenders/active" element={<ActiveTenders />} />
       </Routes>
