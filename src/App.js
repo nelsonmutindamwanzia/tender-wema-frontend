@@ -14,6 +14,7 @@ import PublishedTender from './components/Publishtender'
 import Tenders from './components/Tenders/Tenders';
 import Wlogin from './components/Wlogin';
 import Wsignup from './components/Wsignup';
+import Makeproposal from './components/makeproposal/Makeproposal';
 
 function App() {
 
@@ -43,6 +44,7 @@ function App() {
         <Route path="/tenders/results" element={<TenderResult />} />
         <Route path="/tenders/active" element={<ActiveTenders />} />
         <Route path='/tenders' element={<Tenders/>}/>
+        <Route path='/tenders/makeproposal' element={<Makeproposal/>}/>
       </Routes>
       <Footer/>
       </>
