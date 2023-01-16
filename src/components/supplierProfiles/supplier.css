@@ -4,8 +4,11 @@
     flex-direction: column;
     max-width: fit-content;
     margin-left: 230px;
-    margin-top: -660px;
+    margin-top: -770px;
     margin-bottom: 50px;
+}
+.supplier-page h5{
+    margin-left: 30px;
 }
 .supplier-cards-container{
     display: flex;
@@ -35,7 +38,7 @@
 
 .proposal-container {
     margin-left: 280px;
-    margin-top: -670px;
+    margin-top: -770px;
     margin-bottom: 50px;
     
 }
@@ -119,7 +122,7 @@
 
 .tenders-container {
     margin-left: 250px;
-    margin-top: -670px;
+    margin-top: -770px;
     margin-bottom: 50px;
 }
 .tenders-cards-container{
@@ -150,6 +153,6 @@
     font-size: 16px;
 }
 .tenders-card span{
-    float: right;
     margin-top: auto;
+    margin-left: 0px;
 }
