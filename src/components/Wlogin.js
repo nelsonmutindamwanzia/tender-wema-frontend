@@ -4,7 +4,7 @@ import { useState } from 'react';
 import loginimg from '../assets/loginw.png'
 import '../styles/wlogin.css'
 
-function Wlogin ({onLogin}) 
+function Wlogin () 
 
 {
     const navigate = useNavigate();
@@ -12,10 +12,10 @@ function Wlogin ({onLogin})
     const [password, setPassword] = useState('')
     const [error, setError] = useState('')
     const [loggedEmail, setLoggedEmail] = useState("");
-
+    
     function handleSubmit(event){
         event.preventDefault()
-        fetch("http://localhost:3000/login", {
+        fetch("https://tender-wema-production.up.railway.app/login", {
         method: "POST",
         headers: {
             Accepts: "application/json",
@@ -31,22 +31,12 @@ function Wlogin ({onLogin})
         .then((res) => res.json())
         .then((data) => localStorage.setItem("token", data.jwt));
 
-    SetEmail("");
-    setPassword("");
-        // .then((r) => {
-        //     if (r.ok) {
-        //         r.json().then((user) => onLogin(user)) 
-        //         navigate("/tenders");
-        //     }else {
-        //         r.json().then((err) => setError(err.errors))
-        //         navigate("/login");
-        //     }
-        //     });
+        SetEmail("");
+        setPassword("");
         }
 
         function getProfile(){
-
-            fetch("http://localhost:3000/profile", {
+            fetch("https://tender-wema-production.up.railway.app/profile", {
                 method: "GET",
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -103,7 +93,10 @@ function Wlogin ({onLogin})
         ) : (
             <>
             <h1>{loggedEmail}</h1>
-            <button onClick={localStorage.clear}>Logout</button>
+            <button onClick={()=>{
+                navigate('/')
+                localStorage.removeItem("token")
+            }}>Logout</button>
             </>
         )}
     </div>
