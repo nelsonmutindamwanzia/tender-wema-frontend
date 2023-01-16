@@ -28,7 +28,7 @@ function App() {
         <Route path="/tenders/results" element={<TenderResult />} />
         <Route path="/tenders/active" element={<ActiveTenders />} />
         <Route path='/tenders' element={<Tenders/>}/>
-        <Route path='/tenders/makeproposal' element={<Makeproposal/>}/>
+        <Route path='/tenders/make-proposal' element={<Makeproposal/>}/>
       </Routes>
       <Footer/>
       </>
