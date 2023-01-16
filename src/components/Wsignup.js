@@ -1,14 +1,12 @@
 import React from 'react'
 import { useState } from 'react';
+import { useNavigate } from 'react-router';
 import signupimg from '../assets/signup.png'
 import '../styles/wlogin.css'
 
+function Wsignup(){
 
-
-function Wsignup() 
-
-{
-
+    const navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [passwordConfirmation, setPasswordConfirmation] = useState("");
@@ -19,20 +17,31 @@ function Wsignup()
 
     function handleSignup(e){
         e.preventDefault();
-        fetch("https://tender-wema-production.up.railway.app/signup", {
+        fetch("https://tender-wema-production.up.railway.app/suppliers", {
         method: "POST",
         headers: {
-        "Content-Type": "application/json",
+            Accepts: "application/json",
+            "Content-Type": "application/json",
         },
         body: JSON.stringify({
-        email,
-        password,
-        password_confirmation: passwordConfirmation,
-        company_name,
-        company_telephone,
-        company_address,
+            supplier: {
+                email,
+                password,
+                password_confirmation: passwordConfirmation,
+                company_name,
+                company_telephone,
+                company_address,
+            },
         }),
-        }).then((r) =>r.json())
+        }).then((res) => res.json())
+        .then((data) => console.log(data));
+        navigate("/login")
+        setEmail("");
+        setPassword("");
+        setPasswordConfirmation("");
+        setCompany_Name("");
+        setCompany_Telephone("");
+        setCompany_Address("");
     }
 
   return (
@@ -92,8 +101,6 @@ function Wsignup()
                     </div>
                     <button type="submit" class="btn">Sign Up</button>
                 </form>
-
-
                 </div>
             </div>
         </div>
