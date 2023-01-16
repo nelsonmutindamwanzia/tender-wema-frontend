@@ -23,7 +23,7 @@ const SidebarData = [
   },
   {
     title: 'Publish Tender',
-    path: '/PublishTender',
+    path: '/tenders/publish',
     icon: <IoIcons.IoIosPaper />,
     cName: 'nav-text'
   }, 
