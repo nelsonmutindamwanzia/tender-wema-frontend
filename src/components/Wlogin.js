@@ -11,27 +11,55 @@ function Wlogin ({onLogin})
     const [email, SetEmail] = useState('')
     const [password, setPassword] = useState('')
     const [error, setError] = useState('')
+    const [loggedEmail, setLoggedEmail] = useState("");
 
     function handleSubmit(event){
         event.preventDefault()
-        fetch("https://tender-wema-production.up.railway.app/login", {
+        fetch("http://localhost:3000/login", {
         method: "POST",
         headers: {
-        "Content-Type": "application/json",
+            Accepts: "application/json",
+            "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email, password }),
-        }).then((r) => {
-        if (r.ok) {
-        r.json().then((user) => onLogin(user)) 
-        navigate("/tenders");
-        }else {
-        r.json().then((err) => setError(err.errors))
-        navigate("/login");
-        }
-        });
+        body: JSON.stringify({
+            supplier: {
+                email: email,
+                password: password,
+            },
+        }),
+        })
+        .then((res) => res.json())
+        .then((data) => localStorage.setItem("token", data.jwt));
+
+    SetEmail("");
+    setPassword("");
+        // .then((r) => {
+        //     if (r.ok) {
+        //         r.json().then((user) => onLogin(user)) 
+        //         navigate("/tenders");
+        //     }else {
+        //         r.json().then((err) => setError(err.errors))
+        //         navigate("/login");
+        //     }
+        //     });
         }
 
-  return (
+        function getProfile(){
+
+            fetch("http://localhost:3000/profile", {
+                method: "GET",
+                headers: {
+                    Authorization: `Bearer ${localStorage.getItem("token")}`,
+                },
+            })
+                .then((res) => res.json())
+                .then((data) => {
+                    console.log(data);
+                    setLoggedEmail(data.email);
+                });
+        };
+
+    return (
     <div>
         <div className='container-fluid'>
             <div className='row'>
@@ -56,7 +84,7 @@ function Wlogin ({onLogin})
                         <input type="password" placeholder="xxxxx" 
                     value={password} 
                     onChange={(event) => setPassword(event.target.value)}
-                     class="form-control" id="exampleInputPassword1"/>
+                        class="form-control" id="exampleInputPassword1"/>
                     </div>
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
@@ -68,8 +96,18 @@ function Wlogin ({onLogin})
                 </div>
             </div>
         </div>
+        <hr />
+
+        {!loggedEmail ? (
+            <button onClick={getProfile}>Get Profile</button>
+        ) : (
+            <>
+            <h1>{loggedEmail}</h1>
+            <button onClick={localStorage.clear}>Logout</button>
+            </>
+        )}
     </div>
-  )
+    )
 }
 
 export default Wlogin

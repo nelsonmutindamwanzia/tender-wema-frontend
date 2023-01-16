@@ -19,20 +19,31 @@ function Wsignup()
 
     function handleSignup(e){
         e.preventDefault();
-        fetch("https://tender-wema-production.up.railway.app/signup", {
+        fetch("http://localhost:3000/suppliers", {
         method: "POST",
         headers: {
-        "Content-Type": "application/json",
+            Accepts: "application/json",
+            "Content-Type": "application/json",
         },
         body: JSON.stringify({
-        email,
-        password,
-        password_confirmation: passwordConfirmation,
-        company_name,
-        company_telephone,
-        company_address,
+            supplier: {
+                email,
+                password,
+                password_confirmation: passwordConfirmation,
+                company_name,
+                company_telephone,
+                company_address,
+            },
         }),
-        }).then((r) =>r.json())
+        }) .then((res) => res.json())
+        .then((data) => console.log(data));
+
+        setEmail("");
+        setPassword("");
+        setPasswordConfirmation("");
+        setCompany_Name("");
+        setCompany_Telephone("");
+        setCompany_Address("");
     }
 
   return (
