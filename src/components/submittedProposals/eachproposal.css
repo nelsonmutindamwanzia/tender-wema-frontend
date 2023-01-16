@@ -1,0 +1,34 @@
+.each-proposal-container{
+    margin-left: 220px;
+    margin-top: -730px;
+}
+.each-proposal-header{
+    padding: 0px;
+}
+.each-proposal-header h6{
+    font-size: 18px;
+}
+.each-proposal-header p{
+    font-size: 18px;
+}
+.each-proposal-header p strong{
+    font-size: 19px;
+}
+.proposal-documents{
+    box-shadow: 1px 1px 1px -1px #E4EDFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.each-document {
+    /* display: flex; */
+    margin: 5px;
+    padding: 10px;
+    box-shadow: 1px 1px 1px -1px #E4EDFF;
+    margin-left: 5%;
+}
+.each-document img{
+    max-width: 300px;
+    min-height: 400px;
+    
+}

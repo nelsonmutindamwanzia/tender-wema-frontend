@@ -1,0 +1,35 @@
+.bidtenders-container {
+    margin-left: 250px;
+    margin-top: -650px;
+    margin-bottom: 50px;
+}
+.bidtenders-cards-container{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.bidtenders-card{
+    width: 350px;
+    height: 350px;
+    background-color: #E4EDFF;
+    margin: 16px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 12px; 
+    line-height: 15px;
+    justify-content: space-evenly;
+}
+.bidtenders-card h5{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.bidtenders-card p{
+    font-size: 16px;
+
+}
+.bidtenders-card p strong{
+    font-size: 16px;
+    
+}

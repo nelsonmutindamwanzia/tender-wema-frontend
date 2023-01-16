@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-
+import SupplierSideBar from "../supplierProfiles/SupplierSideBar";
+import './eachproposal.css';
 
 function EachProposal() {
     const params = useParams();
@@ -14,48 +15,52 @@ function EachProposal() {
     const [status, setStatus] = useState("false");
 
     useEffect(() => {
-        fetch("http://localhost:3000/proposals")
+        fetch(`http://localhost:3000/proposals`)
             .then((response) => response.json())
             .then((data) => {
                 setProposals(data);
             })
-    });
+    }, [setProposals]);
 
     const showEachProposal = proposals.map(
         (proposal) =>
             proposal.id === parseInt(params.id) && (
                 <div className="each-proposal-container">
-                    <div>
+                    <div className="each-proposal-header">
                         <h6>Proposal Status: <span class="badge bg-primary"> {proposal.status} </span> </h6>
-                        <h4>Proposal Submitted by: {proposal.supplier.company_name} </h4>
-                        <h4>In response to tender Number: {proposal.tender.id} </h4>
-                        <h4>Proposed Amount: {proposal.proposal_amount} </h4>
-                        <div>
-                            <div>
-                                <img src={proposal.kra_pin} alt="KRA PIN" height="600px"  />
-                            </div>
-                            <div>
-                                <img src={proposal.company_license} alt="company_license" height="600px" />
-                            </div>
-                            <div>
-                                <img src={proposal.bank_statements} alt="bank_statements" height="600px" />
-                            </div>
-                            <div>
-                                <img src={proposal.tax_compliance} alt="tax_compliance" height="600px" />
-                            </div>
-                            <div>
-                                <img src={proposal.council_registration} alt="Counsil_registration" height="600px" />
-                            </div>
-                        </div>
-
+                        <p>Proposal Submitted by: <strong>{proposal.supplier.company_name}</strong> </p>
+                        <p>In response to tender Number: <strong>{proposal.tender.id}</strong> </p>
+                        <p>Proposed Amount: <strong>{proposal.proposal_amount}</strong> </p>
+                        <p>KRA PIN: <strong> {proposal.kra_pin} </strong></p>
                     </div>
+                    <h5>Other Documents</h5>
+                    <div className="proposal-documents">
+                        
+                        <div className="each-document">
+                            <p>Company Licence</p>
+                            <img src={proposal.company_license} alt="company_license" />
+                        </div>
+                        <div className="each-document">
+                            <p>Bank Statement</p>
+                            <img src={proposal.bank_statements} alt="bank_statements" />
+                        </div>
+                        <div className="each-document">
+                            <p>Tax Compliance</p>
+                            <img src={proposal.tax_compliance} alt="tax_compliance" />
+                        </div>
+                        <div className="each-document">
+                            <p>Counsil Registration</p>
+                            <img src={proposal.council_registration} alt="Counsil_registration" />
+                        </div>
+                    </div>
+
                 </div>
             )
     );
 
     return (
         <div>
-            <p>teender</p>
+            <SupplierSideBar />
             {showEachProposal}
         </div>
     )
