@@ -20,7 +20,7 @@ function EachProposal() {
             .then((data) => {
                 setProposals(data);
             })
-    });
+    }, [setProposals]);
 
     const showEachProposal = proposals.map(
         (proposal) =>
