@@ -10,11 +10,13 @@ function EachTender() {
 
     useEffect(() => {
         fetch(`http://localhost:3000/tenders`)
-        .then((response) => response.json)
+        .then((response) => response.json())
         .then((data) => {
+            console.log(data.tender)
             setTenders(data);
         })
-    });
+    }, [setTenders]);
+    
 
     const showEachTender = tenders.map(
         (tender) => 
@@ -26,7 +28,7 @@ function EachTender() {
                 <div>
                     <h6>Proposals recieved</h6>
                     <div>
-                        {tender.proposals}
+                        [{tender.proposals}]
                     </div>
                 </div>
             </div>
