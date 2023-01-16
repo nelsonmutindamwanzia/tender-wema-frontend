@@ -33,6 +33,12 @@ const SidebarData = [
     path: '/tenders/results',
     icon: <IoIcons.IoMdHelpCircle />,
     cName: 'nav-text'
+  },
+  {
+    title: 'Logout',
+    path: '/logout',
+    icon: <IoIcons.IoMdLogOut />,
+    cName: 'nav-text'
   }
 ];
 
