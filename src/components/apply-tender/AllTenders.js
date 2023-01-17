@@ -54,6 +54,8 @@ function AllTenders() {
                 <h5>All Tenders</h5>
                 <div className="bidtenders-cards-container" >
                     {allTenders.map((tender) => {
+                        const timeline = new Date(tender.timeline).toLocaleString('en-GB', { timeZone: 'EAT' })
+                        const deadline = new Date(tender.application_deadline).toLocaleString('en-GB', { timeZone: 'EAT' })
                         return (
                             <div>
                                 <div className="bidtenders-card" key={tender.id} >
@@ -70,11 +72,11 @@ function AllTenders() {
                                                                     </tr>
                                                                     <tr>
                                                                     <td>Timeline:</td>
-                                                                    <td>{tender.timeline}</td>
+                                                                    <td>{timeline}</td>
                                                                     </tr>
                                                                     <tr>
                                                                     <td>Application Deadline:</td>
-                                                                    <td>{tender.application_deadline}</td>
+                                                                    <td>{deadline}</td>
                                                                     </tr>
                                                                     <tr>
                                                                     <td>Description</td>

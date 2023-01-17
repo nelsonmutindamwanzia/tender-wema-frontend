@@ -44,14 +44,16 @@ function Tenders() {
                 <h5>All Tenders</h5>
                 <div className="tenders-cards-container" >
                     {tenders.map((tender) => {
+                        const timeline = new Date(tender.timeline).toLocaleString('en-GB', { timeZone: 'EAT' })
+                        const deadline = new Date(tender.application_deadline).toLocaleString('en-GB', { timeZone: 'EAT' })
                         return (
                             <div>
                                 <div className="tenders-card" key={tender.id} >
                                     <h5>{tender.tender_name} </h5>
                                     <h6>Tender Category: <strong>{tender.tender_category}</strong></h6>
                                     <h6>Tender Budget: <strong>{tender.budget}</strong></h6>
-                                    <h6>Timeline: <strong>{tender.timeline}</strong></h6>
-                                    <h6>Application Deadline: <strong> {tender.application_deadline}</strong></h6>
+                                    <h6>Timeline: <strong>{timeline}</strong></h6>
+                                    <h6>Application Deadline: <strong> {deadline}</strong></h6>
                                     {/* <p>Description: {tender.tender_description}</p> */}
                                     <Link to={`/tenders/${tender.id}`} ><span class="badge bg-primary">View Tender</span></Link>
                                 </div>
