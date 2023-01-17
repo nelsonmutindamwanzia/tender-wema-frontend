@@ -1,0 +1,53 @@
+.ep-content {
+    float: left;
+    background-color: #f9faff;
+    height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ep-form {
+    float: left;
+    background-color: #ebeeff;
+    padding: 30px;
+    display: block;
+}
+
+.ep-group {
+    width: 100%;
+    margin-bottom: 25px;
+    clear: both;
+    float: left;
+}
+
+.ep-group span {
+    width: 150px;
+    display: block;
+    float: left;
+    font-weight: 600;
+}
+
+.ep-group input, textarea {
+    width: 200px;
+    padding: 15px;
+    border-radius: 15px;
+    background: white;
+    float: left;
+    border-style: none;
+}
+
+.ep-button{
+    text-align: center;
+}
+
+.ep-button > button{
+    background-color: #0D51C0;
+	text-align: center;
+	color: #ffffff;
+	font-weight: 600;
+    width: 239px;
+    border-radius: 15px;
+    height: 52px;
+    font-size: 20px; 
+    border-style: none;
+}
