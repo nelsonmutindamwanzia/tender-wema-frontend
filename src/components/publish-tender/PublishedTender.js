@@ -4,8 +4,9 @@ import SupplierSideBar from '../supplierProfiles/SupplierSideBar';
 // import '../styles/publishtender.css'
 // import { FaClock, FaBolt, FaCheckDouble } from "react-icons/fa";
 // import {GrDocumentPerformance} from "react-icons/gr";
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./publishtender.css";
+import Footer from '../Footer';
 
 function PublishedTender () {
     const navigate = useNavigate();
@@ -97,20 +98,23 @@ function PublishedTender () {
                         
                         <div className='tender-group'>
                             <span>  Tender Description </span>
-                                <textarea type="text" id="tender-address" rows="4" cols="10"
+                                <textarea type="text" id="tender-address" rows="4" cols="15"
                                 onChange={(e) => setTender_Description(e.target.value)} 
                                 value={tender_description}
                                 />
                         </div>
                     </div>
                     <div className='col-md-12'>
+                        <div className = "pt-button">
                             <button>Submit Tender</button>
+                        </div>
                     </div> 
                     
                 </div>
                 </form>
             </div></div>
         </div>
+        <Footer/>
         </>
     )
 }
