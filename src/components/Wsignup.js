@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import signupimg from '../assets/signup.png'
 import '../styles/wlogin.css'
+import Footer from './Footer';
+import Navi from './Navi';
 
 function Wsignup(){
 
@@ -45,6 +47,8 @@ function Wsignup(){
     }
 
   return (
+    <>
+    <Navi/>
     <div>
         <div className='container-fluid'>
             <div className='row'>
@@ -104,8 +108,9 @@ function Wsignup(){
                 </div>
             </div>
         </div>
-
     </div>
+    <Footer/>
+    </>
   )
 }
 

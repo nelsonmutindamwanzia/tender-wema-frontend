@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { useState } from 'react';
 import loginimg from '../assets/loginw.png'
 import '../styles/wlogin.css'
+import Footer from './Footer';
+import Navi from './Navi';
 
 function Wlogin () 
 
@@ -50,6 +52,8 @@ function Wlogin ()
         };
 
     return (
+        <>
+    <Navi/>
     <div>
         <div className='container-fluid'>
             <div className='row'>
@@ -100,6 +104,8 @@ function Wlogin ()
             </>
         )}
     </div>
+    <Footer/>
+    </>
     )
 }
 
