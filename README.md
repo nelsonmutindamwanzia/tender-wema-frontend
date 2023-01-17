@@ -24,8 +24,9 @@ To run this project, one must have either of the following;
     - Run "npm install react-router-dom" to install a compatible version of react-router-dom.
     - Run "npm start" command in the terminal to get the React App running.
 
-## Known Issues
-1. When logging in to the application, the session hash is not populated and cookie not created. A potential fix to the issue is being worked on using JWT.  
+## Future Updates
+1. Create a user dashboard that will allow them to update profile information.
+2. Allow suppliers to be able to edit their proposals.
 
 ## Copyright and License (MIT)
 Copyright (c) 2023 Nelson Mutinda and others
