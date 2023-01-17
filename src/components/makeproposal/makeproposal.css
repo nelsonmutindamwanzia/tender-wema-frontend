@@ -15,6 +15,7 @@
   .nav-menu {
     background-color: #051135;
     width: 270px;
+    height: 100%;
     display: flex;
     justify-content: center;
     /* position: fixed; */
@@ -22,6 +23,7 @@
     margin-left: -60px;
     transition: 850ms;
     margin-top: 16px;
+
   }
   
   .nav-menu.active {
