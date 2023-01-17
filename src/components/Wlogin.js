@@ -13,7 +13,7 @@ function Wlogin ()
     const [email, SetEmail] = useState('')
     const [password, setPassword] = useState('')
     const [error, setError] = useState('')
-    const [loggedEmail, setLoggedEmail] = useState("");
+    
     
     function handleSubmit(event){
         event.preventDefault()
@@ -30,26 +30,25 @@ function Wlogin ()
             },
         }),
         })
-        .then((res) => res.json())
-        .then((data) => localStorage.setItem("token", data.jwt));
+        .then (r => {
+            if (r.ok) {
+                r.json().then(data => {
+                    localStorage.setItem("token", data.jwt)
+                    navigate('/bidtenders')
+                        
+                    });
+            } else {
+                r.json().then(data => {
+                    setError(data.errors)
+                })
+            } 
+        })
 
         SetEmail("");
         setPassword("");
         }
 
-        function getProfile(){
-            fetch("https://tender-wema-production.up.railway.app/profile", {
-                method: "GET",
-                headers: {
-                    Authorization: `Bearer ${localStorage.getItem("token")}`,
-                },
-            })
-                .then((res) => res.json())
-                .then((data) => {
-                    console.log(data);
-                    setLoggedEmail(data.email);
-                });
-        };
+        
 
     return (
         <>
@@ -89,20 +88,7 @@ function Wlogin ()
                 </form>
                 </div>
             </div>
-        </div>
-        <hr />
-
-        {!loggedEmail ? (
-            <button onClick={getProfile}>Get Profile</button>
-        ) : (
-            <>
-            <h1>{loggedEmail}</h1>
-            <button onClick={()=>{
-                navigate('/')
-                localStorage.removeItem("token")
-            }}>Logout</button>
-            </>
-        )}
+        </div>        
     </div>
     <Footer/>
     </>
