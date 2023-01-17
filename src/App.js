@@ -6,7 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 import AllProposals from './components/submittedProposals/AllProposals';
 import TenderResult from './components/Tender-Results';
 import ActiveTenders from './components/Active-Tenders';
-import PublishedTender from './components/Publishtender'
+import PublishedTender from './components/publish-tender/PublishedTender'
 import Tenders from './components/Tenders/Tenders';
 import Wlogin from './components/Wlogin';
 import Wsignup from './components/Wsignup';
