@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import EvaluateProposals from "../evaluate-proposals/EvaluateProposals";
 import SupplierSideBar from "../supplierProfiles/SupplierSideBar";
 import './eachproposal.css';
 
@@ -59,10 +60,13 @@ function EachProposal() {
     );
 
     return (
+        <>
         <div>
             <SupplierSideBar />
             {showEachProposal}
         </div>
+        <EvaluateProposals/>
+        </>
     )
 
 }
