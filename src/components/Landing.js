@@ -5,10 +5,13 @@ import aboutus1 from '../assets/aboutus1.png'
 import aboutus3 from '../assets/aboutus3.png'
 import { FaClock, FaBolt, FaCheckDouble } from "react-icons/fa";
 import {GrDocumentPerformance} from "react-icons/gr";
+import Navi from './Navi'
+import Footer from './Footer'
 
 function Landing() {
   return (
-    <div>
+      <div>
+        <Navi/>
         <div className='container-fluid' id='landing-page'>
             <div className='row'>
                 <div className='col-md-4 col-lg-4 col-sm-12 col-xl-6'>
@@ -105,6 +108,7 @@ function Landing() {
                 
             </div>
         </div>
+        <Footer/>
     </div>
   )
 }
