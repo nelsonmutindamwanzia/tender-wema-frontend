@@ -9,22 +9,17 @@
 
 .publish-content {
     float: left;
-    /* width: calc(100% - 300px); */
     background-color: #f9faff;
     height: 100vh;
     padding-left: 20px;
     padding-right: 20px;
-    /* padding: 50px; */
-    /* border: 1px solid red; */
 }
 
 .publish-form {
     float: left;
-    /* width: 100%; */
     background-color: #ebeeff;
     padding: 30px;
     display: block;
-    /* border: 1px solid red; */
 }
 
 .tender-group {
