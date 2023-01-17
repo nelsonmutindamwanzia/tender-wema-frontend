@@ -9,7 +9,7 @@ function EachTender() {
     const [tender_description, setTender_description] = useState("");
 
     useEffect(() => {
-        fetch(`http://localhost:3000/tenders`)
+        fetch(`https://tender-wema-production.up.railway.app/tenders`)
         .then((response) => response.json())
         .then((data) => {
             console.log(data.tender)

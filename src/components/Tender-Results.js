@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/Tender-Result.css'
-import { FaClock, FaBolt, FaCheckDouble } from "react-icons/fa";
-import {GrDocumentPerformance} from "react-icons/gr";
+// import { FaClock, FaBolt, FaCheckDouble } from "react-icons/fa";
+// import {GrDocumentPerformance} from "react-icons/gr";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
