@@ -1,7 +1,14 @@
 .bidtenders-container {
     margin-left: 250px;
-    margin-top: -650px;
+    margin-top: -850px;
     margin-bottom: 50px;
+}
+.form-searchbar{
+    height: 62px;
+    width: 1200px;
+}
+::placeholder{
+    font-size: 20px;
 }
 .bidtenders-cards-container{
     display: flex;
@@ -10,8 +17,8 @@
     flex-wrap: wrap;
 }
 .bidtenders-card{
-    width: 350px;
-    height: 350px;
+    width: 390px;
+    height: 490px;
     background-color: #E4EDFF;
     margin: 16px;
     border-radius: 20px;
@@ -21,7 +28,7 @@
     justify-content: space-evenly;
 }
 .bidtenders-card h5{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
 }
@@ -33,3 +40,27 @@
     font-size: 16px;
     
 }
+
+tr{
+    /* border: 0; */
+    padding: 0;
+    margin: 0;
+    line-height: 15px;
+}
+td {
+    font-size: 15px;
+}
+
+.btnholder {
+    text-align: center;
+}
+.btn#submittender{
+    background-color: #0D51C0;
+	text-align: center;
+	color: #ffffff;
+	font-weight: 600;
+    width: 239px;
+    height: 52px;
+    font-size: 20px;
+}
+

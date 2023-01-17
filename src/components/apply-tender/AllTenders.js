@@ -1,0 +1,98 @@
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import MakeProposalSidebar from "../makeproposal/MakeProposalSidebar";
+import './alltenders.css';
+import {FaSearch} from "react-icons/fa"
+
+
+function AllTenders() {
+    const [allTenders, setAllTenders] = useState([]);
+    const [filterQuery, setFilterQuery] = useState("");
+
+    useEffect(() => {
+        fetch(`https://tender-wema-production.up.railway.app/tenders`)
+            .then((response) => response.json())
+            .then((data => {
+                if (!filterQuery) {
+                    setAllTenders(data);
+                }
+                else {
+                    setAllTenders(
+                        data.filter((tender) =>
+                            tender.tender_name.toLowerCase().includes(filterQuery.toLowerCase()))
+                    )
+                }
+            }))
+    }, [filterQuery])
+
+    return (
+        <div>
+            <MakeProposalSidebar />
+            <div className="bidtenders-container">
+                {/* search */}
+                <div class="search" >
+                                <FaSearch style={{
+                                    color: "#5A96F9",
+                                    }}/>
+                                    <input
+                                        type="text"
+                                        placeholder="Search Tenders"
+                                        onChange={(e) => {
+                                            setFilterQuery(e.target.value);
+                                            console.log(filterQuery);
+                                        }}
+                                        className="form-searchbar" 
+                                    />
+                </div>
+                <br/> <br/>
+
+                {/* all tenders */}
+                <h5>All Tenders</h5>
+                <div className="bidtenders-cards-container" >
+                    {allTenders.map((tender) => {
+                        return (
+                            <div>
+                                <div className="bidtenders-card" key={tender.id} >
+                                    <h5>{tender.tender_name} </h5>
+                                    <table className="table">
+                                                                <tbody>
+                                                                    <tr>
+                                                                    <td>Application Status: </td>
+                                                                    <td><span class="badge bg-secondary"> {tender.status}</span> </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                    <td>Tender Category</td>
+                                                                    <td>{tender.tender_category}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                    <td>Timeline:</td>
+                                                                    <td>{tender.timeline}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                    <td>Application Deadline:</td>
+                                                                    <td>{tender.application_deadline}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                    <td>Description</td>
+                                                                    <td>{tender.tender_description}</td>
+                                                                    </tr>
+                                                                </tbody>
+                                    </table>
+                                    <div className="btnholder">
+                                        <Link to={`/tenders/${tender.id}`} ><span class="btn" id="submittender">Submit Proposal</span></Link>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        )
+
+                    })}
+                </div>
+
+            </div>
+        </div>
+    )
+
+}
+export default AllTenders;
