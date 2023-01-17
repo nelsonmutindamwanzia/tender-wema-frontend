@@ -14,13 +14,13 @@ import Makeproposal from './components/makeproposal/Makeproposal';
 import Suppliers from './components/supplierProfiles/Suppliers';
 import EachProposal from './components/submittedProposals/EachProposal';
 import EachTender from './components/Tenders/EachTender';
-import AllTenders from './components/apply-tender/AllTender';
+import AllTenders from './components/apply-tender/AllTenders';
 
 function App() {
 
   return (
       <>
-      <Navi/>
+      {/* <Navi/> */}
       <Routes>
         <Route path='/' element={<Landing/>}/>
         <Route path='/signup' element={<Wsignup />}/>
@@ -37,7 +37,7 @@ function App() {
         <Route path='/bidtenders' element={<AllTenders/>}/>
 
       </Routes>
-      <Footer/>
+      {/* <Footer/> */}
       </>
   )
 
