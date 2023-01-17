@@ -15,7 +15,7 @@ function EachProposal() {
     const [status, setStatus] = useState("false");
 
     useEffect(() => {
-        fetch(`http://localhost:3000/proposals`)
+        fetch(`https://tender-wema-production.up.railway.app/proposals`)
             .then((response) => response.json())
             .then((data) => {
                 setProposals(data);
