@@ -1,6 +1,62 @@
 .publisher-container{
     margin-top: -680px;
     margin-left: 300px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
+    float: left;
+    width: 80%;
+    height: 100vh;
 }
 
+.publish-content {
+    float: left;
+    background-color: #f9faff;
+    height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.publish-form {
+    float: left;
+    background-color: #ebeeff;
+    padding: 30px;
+    display: block;
+}
+
+.tender-group {
+    width: 100%;
+    margin-bottom: 25px;
+    clear: both;
+    float: left;
+}
+
+.tender-group span {
+    width: 150px;
+    display: block;
+    float: left;
+    font-weight: 600;
+}
+
+.tender-group input, textarea {
+    width: 200px;
+    padding: 15px;
+    border-radius: 15px;
+    background: white;
+    float: left;
+    border-style: none;
+}
+
+.pt-button{
+    text-align: center;
+}
+
+.pt-button > button{
+    background-color: #0D51C0;
+	text-align: center;
+	color: #ffffff;
+	font-weight: 600;
+    width: 239px;
+    border-radius: 15px;
+    height: 52px;
+    font-size: 20px; 
+    border-style: none;
+}
