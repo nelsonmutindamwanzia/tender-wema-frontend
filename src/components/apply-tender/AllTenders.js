@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import MakeProposalSidebar from "../makeproposal/MakeProposalSidebar";
 import './alltenders.css';
 import {FaSearch} from "react-icons/fa"
+import Footer from "../Footer";
 
 
 function AllTenders() {
@@ -26,8 +27,11 @@ function AllTenders() {
     }, [filterQuery])
 
     return (
+        <>
         <div>
+            <div className="sd-bar">
             <MakeProposalSidebar />
+            </div>
             <div className="bidtenders-container">
                 {/* search */}
                 <div class="search" >
@@ -92,6 +96,8 @@ function AllTenders() {
 
             </div>
         </div>
+        <Footer/>
+        </>
     )
 
 }
