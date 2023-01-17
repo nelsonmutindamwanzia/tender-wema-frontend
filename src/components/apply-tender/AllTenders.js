@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import MakeProposalSidebar from "../makeproposal/MakeProposalSidebar";
 import './alltenders.css';
 import {FaSearch} from "react-icons/fa"
@@ -7,8 +7,11 @@ import Footer from "../Footer";
 
 
 function AllTenders() {
+
+    const navigate = useNavigate();
     const [allTenders, setAllTenders] = useState([]);
     const [filterQuery, setFilterQuery] = useState("");
+    const [loggedEmail, setLoggedEmail] = useState("");
 
     useEffect(() => {
         fetch(`https://tender-wema-production.up.railway.app/tenders`)
@@ -25,6 +28,20 @@ function AllTenders() {
                 }
             }))
     }, [filterQuery])
+
+    function getProfile(){
+        fetch("https://tender-wema-production.up.railway.app/profile", {
+            method: "GET",
+            headers: {
+                Authorization: `Bearer ${localStorage.getItem("token")}`,
+            },
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                console.log(data);
+                setLoggedEmail(data.email);
+            });
+    };
 
     return (
         <>
@@ -52,8 +69,24 @@ function AllTenders() {
 
                 {/* all tenders */}
                 <h5>All Tenders</h5>
+                <div className="login-logout">
+                    You are signed in as: {loggedEmail}
+                    {!loggedEmail ? (
+                        <button onClick={getProfile}>Get Profile</button>
+                    ) : (
+                        <>
+
+                        <button onClick={()=>{
+                            navigate('/')
+                            localStorage.removeItem("token")
+                        }}>Logout</button>
+                        </>
+                    )}
+                </div>
                 <div className="bidtenders-cards-container" >
                     {allTenders.map((tender) => {
+                        const timeline = new Date(tender.timeline).toLocaleString('en-GB', { timeZone: 'EAT' })
+                        const deadline = new Date(tender.application_deadline).toLocaleString('en-GB', { timeZone: 'EAT' })
                         return (
                             <div>
                                 <div className="bidtenders-card" key={tender.id} >
@@ -70,11 +103,11 @@ function AllTenders() {
                                                                     </tr>
                                                                     <tr>
                                                                     <td>Timeline:</td>
-                                                                    <td>{tender.timeline}</td>
+                                                                    <td>{timeline}</td>
                                                                     </tr>
                                                                     <tr>
                                                                     <td>Application Deadline:</td>
-                                                                    <td>{tender.application_deadline}</td>
+                                                                    <td>{deadline}</td>
                                                                     </tr>
                                                                     <tr>
                                                                     <td>Description</td>

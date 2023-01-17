@@ -5,7 +5,7 @@ import Navi from './components/Navi';
 import { Route, Routes } from 'react-router-dom';
 import AllProposals from './components/submittedProposals/AllProposals';
 import TenderResult from './components/tender-results/Tender-Results';
-import ActiveTenders from './components/Active-Tenders';
+import ActiveTenders from './components/active-tenders/Active-Tenders';
 import PublishedTender from './components/publish-tender/PublishedTender'
 import Tenders from './components/Tenders/Tenders';
 import Wlogin from './components/Wlogin';
@@ -15,6 +15,7 @@ import Suppliers from './components/supplierProfiles/Suppliers';
 import EachProposal from './components/submittedProposals/EachProposal';
 import EachTender from './components/Tenders/EachTender';
 import AllTenders from './components/apply-tender/AllTenders';
+import EvaluateProposals from './components/evaluate-proposals/EvaluateProposals';
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
         <Route path="/tenders/active" element={<ActiveTenders />} />
         <Route path='/tenders/make-proposal' element={<Makeproposal/>}/>
         <Route path='/bidtenders' element={<AllTenders/>}/>
+        <Route path='/evaluation' element={<EvaluateProposals/>}/>
 
       </Routes>
       {/* <Footer/> */}
