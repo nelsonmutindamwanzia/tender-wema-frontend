@@ -5,7 +5,7 @@ import Navi from './components/Navi';
 import { Route, Routes } from 'react-router-dom';
 import AllProposals from './components/submittedProposals/AllProposals';
 import TenderResult from './components/tender-results/Tender-Results';
-import ActiveTenders from './components/Active-Tenders';
+import ActiveTenders from './components/active-tenders/Active-Tenders';
 import PublishedTender from './components/publish-tender/PublishedTender'
 import Tenders from './components/Tenders/Tenders';
 import Wlogin from './components/Wlogin';
