@@ -25,7 +25,7 @@ function EachTender() {
         tender.id === parseInt(params.id) && (
             <div className="each-tender-container" >
                 <div>  
-                    <Link to={`/tender.id`} > {tender.tender_name} </Link>              
+                    <Link to={`/tender.id`} > {tender.tender_name} </Link> <br></br>             
                     <p>Tender Description: {tender.tender_description}</p>
                 </div>
                 <div>
