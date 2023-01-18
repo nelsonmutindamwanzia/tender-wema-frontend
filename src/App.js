@@ -16,6 +16,7 @@ import AllTenders from './components/apply-tender/AllTenders';
 import EvaluateProposals from './components/evaluate-proposals/EvaluateProposals';
 import SubmitProposal from './components/apply-tender/SubmitProposal';
 import EachSupplier from './components/supplierProfiles/EachSupplier';
+import EvaluatedResults from './components/evaluate-proposals/EvaluatedResults';
 
 function App() {
 
@@ -37,7 +38,7 @@ function App() {
         <Route path="/tenders/active" element={<ActiveTenders />} />
         <Route path='/tenders/make-proposal' element={<Makeproposal/>}/>
         <Route path='/bidtenders' element={<AllTenders/>}/>
-        <Route path='/evaluation' element={<EvaluateProposals/>}/>
+        <Route path='/evaluation' element={<EvaluatedResults/>}/>
         <Route path='/bidtenders/:id' element={<SubmitProposal/>}/>
 
       </Routes>
