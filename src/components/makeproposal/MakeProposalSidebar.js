@@ -36,7 +36,7 @@ const SidebarData = [
   },
   {
     title: 'Logout',
-    path: '/logout',
+    path: '/',
     icon: <IoIcons.IoMdLogOut />,
     cName: 'nav-text'
   }

@@ -72,7 +72,7 @@ function AllTenders() {
                     <div className="login-logout">
                         You are signed in as: {loggedEmail}
                         {!loggedEmail ? (
-                            <button onClick={getProfile}> {loggedEmail}</button>
+                            <button onClick={getProfile}> Supplier </button>
                         ) : (
                             <>
 
