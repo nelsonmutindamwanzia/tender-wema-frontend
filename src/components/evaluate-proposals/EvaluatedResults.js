@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Footer from '../Footer';
 import '../tender-results/Tender-Result.css';
 import MakeProposalSidebar from '../makeproposal/MakeProposalSidebar';
+import SupplierSideBar from '../supplierProfiles/SupplierSideBar';
 
 function EvaluatedResults () {
 
@@ -26,7 +27,7 @@ function EvaluatedResults () {
 
     return (
         <>
-        <MakeProposalSidebar />
+        <SupplierSideBar />
         <div className='t-r-container'>
             <div className='t-r-content'>
                 <h2> Tender Results </h2> 

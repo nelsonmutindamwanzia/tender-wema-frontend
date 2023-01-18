@@ -39,7 +39,7 @@ const SidebarData = [
   },
   {
     title: 'Evaluation Scores',
-    path: '/tenders/awards',
+    path: '/evaluation',
     icon: <IoIcons.IoMdGitCompare />,
     cName: 'nav-text'
   },
