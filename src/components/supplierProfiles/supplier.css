@@ -132,8 +132,8 @@
     flex-wrap: wrap;
 }
 .tenders-card{
-    width: 320px;
-    height: 300px;
+    width: 380px;
+    height: 380px;
     background-color: #E4EDFF;
     margin: 20px;
     border-radius: 20px;
@@ -142,7 +142,7 @@
     line-height: 12px;
 }
 .tenders-card h5{
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
 }
@@ -156,3 +156,28 @@
     margin-top: auto;
     margin-left: 0px;
 }
+
+tr{
+    /* border: 0; */
+    padding: 0;
+    margin: 0;
+    line-height: 15px;
+}
+td {
+    font-size: 15px;
+}
+
+.btnholder {
+    text-align: center;
+}
+.btn#submittender{
+    background-color: #0D51C0;
+	text-align: center;
+	color: #ffffff;
+	font-weight: 600;
+    width: 239px;
+    height: 52px;
+    font-size: 20px;
+}
+
+
