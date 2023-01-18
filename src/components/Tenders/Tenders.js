@@ -78,13 +78,14 @@ function Tenders() {
                                             </tr>
                                         </tbody>
                                     </table>
+                                    <div className="d-grid gap-2 d-md-block">
                                     <div className="btnholder">
-                                        <Link to={`/tenders/${tender.id}`} ><span class="btn" id="submittender">View Proposals</span></Link>
+                                            <Link to={`/tenders/${tender.id}`} > <span className=" btn btn-primary"> View</span> </Link>
                                     </div>
-                                    <div>
+                                    <div className="btndelete">
                                         <button
                                             type="button"
-                                            className="btn btn-danger btn-sm"
+                                            className="btn-danger btn-sm"
                                             onClick={(e) => {
                                                 e.preventDefault();
                                                 fetch(`https://tender-wema-production.up.railway.app/tenders/${tender.id}`, {
@@ -94,6 +95,7 @@ function Tenders() {
                                         >
                                             Delete
                                         </button>
+                                    </div>
                                     </div>
                                 </div>
                             </div>

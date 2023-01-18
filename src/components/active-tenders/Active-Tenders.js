@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Footer from '../Footer';
 import MakeProposalSidebar from '../makeproposal/MakeProposalSidebar';
 import './active-tenders.css';
+import { FaSearch } from "react-icons/fa"
+
 
 function ActiveTenders () {
     const [tenders, setTenders] = useState([]);
@@ -31,10 +33,12 @@ function ActiveTenders () {
         <>
         <div>
             <MakeProposalSidebar />
-            <div className="at-container">
-                <br></br>
+            <div className="actiive-tender-container">
+                <br/><br/>
                 <div class="search" >
-                    <i class="fa fa-search"></i>
+                <FaSearch style={{
+                            color: "#5A96F9",
+                        }} />
                     <input
                         type="text"
                         placeholder="Search Tenders"
@@ -45,7 +49,7 @@ function ActiveTenders () {
                         className="form-searchbar"
                     />
                 </div>
-                <br></br>
+                <br/><br/>
                 <h5>Active Tenders</h5>
                 <div className="at-cards-container" >
                 {tenders.filter(tender => {
@@ -66,10 +70,26 @@ function ActiveTenders () {
                             <div>
                                 <div className="at-card" key={tender.id} >
                                     <h5>{tender.tender_name} </h5>
-                                    <h6>Tender Category: <strong>{tender.tender_category}</strong></h6>
-                                    <h6>Tender Budget: <strong>{tender.budget}</strong></h6>
-                                    <h6>Timeline: <strong>{timeline}</strong></h6>
-                                    <h6>Application Deadline: <strong> {deadline}</strong></h6>
+                                    <table className="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Tender Category: </td>
+                                                    <td> {tender.tender_category}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Tender Budget: </td>
+                                                    <td>{tender.budget}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Timeline:</td>
+                                                    <td>{timeline}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Application Deadline:</td>
+                                                    <td>{deadline}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     {/* <p>Description: {tender.tender_description}</p> */}
                                     {/* <Link to={`/tenders/${tender.id}`} ><span class="badge bg-primary">View Tender</span></Link> */}
                                 </div>

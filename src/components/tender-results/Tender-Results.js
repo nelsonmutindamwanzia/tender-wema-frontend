@@ -25,27 +25,41 @@ function TenderResult () {
     }, [filterQuery]);
 
     return (
+
+        
         <>
         <MakeProposalSidebar />
         <div className='t-r-container'>
             <div className='t-r-content'>
                 <h2> Tender Results </h2> 
+                <br/>
                 <div className="tr-cards-container" >
-                {tenderResults.map((tenderResult) => {
-                    return (
                         <div className="box-card">
-                            <div className="tr-card" key={tenderResult.id} >
-                                <p>Price:  {tenderResult.price} </p>
-                                <p>Quality: {tenderResult.quality}</p>
-                                <p>Maintenance: {tenderResult.maintenance}</p>
-                                <p>Completion Period: {tenderResult.completion_period}</p>
+                            <div className="tr-card">
+                                <table className="table">
+                                            <tbody className='tender-results'>
+                                                <tr>
+                                                    <td>Tender ID: </td>
+                                                    <td>023/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Proposal Amount: </td>
+                                                    <td>$5000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Proposal Score: </td>
+                                                    <td>95%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Status</td>
+                                                    <td className='awarded'> Awarded</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
                                 {/* <span class="badge bg-primary">View</span> */}
                             </div>
                         </div>
-
-                    )
-
-                })}
             </div>
             </div>
         </div>

@@ -42,6 +42,7 @@ function App() {
         <Route path='/bidtenders' element={<AllTenders/>}/>
         <Route path='/evaluation' element={<EvaluatedResults/>}/>
         <Route path='/bidtenders/:id' element={<SubmitProposal/>}/>
+        <Route path='/tenders/awards' element={<TenderResult />}/>
 
       </Routes>
       {/* <Footer/> */}

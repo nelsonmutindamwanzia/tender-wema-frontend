@@ -124,7 +124,7 @@
 .tenders-container {
     margin-left: 280px;
     margin-top: -770px;
-    margin-bottom: 50px;
+    margin-bottom: 158px;
 }
 .tenders-cards-container{
     display: flex;
@@ -133,8 +133,8 @@
     flex-wrap: wrap;
 }
 .tenders-card{
-    width: 380px;
-    height: 380px;
+    width: 400px;
+    height: 370px;
     background-color: #E4EDFF;
     margin: 20px;
     border-radius: 20px;
@@ -169,17 +169,31 @@ td {
 }
 
 .btnholder {
+    float: left;
+    width: 109px;
+    
+
+}
+.btnsupplierview{
     text-align: center;
 }
-.btn#submittender{
-    background-color: #0D51C0;
+.btndelete{
+    float: right;
+    width: 109px;
+    height: 82px;
+    margin-top: 25px;
+
+
+}
+/* .tendersbtn#submittender{
+    background-color: #4d4f52;
 	text-align: center;
 	color: #ffffff;
 	font-weight: 600;
     width: 239px;
     height: 52px;
     font-size: 20px;
-}
+} */
 .btn#proposetender{
     background-color: #0D51C0;
 	text-align: center;

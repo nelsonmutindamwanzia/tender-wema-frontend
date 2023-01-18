@@ -31,6 +31,7 @@ function EachTender() {
                 <div>
                     <h6>Proposals recieved</h6>
                     <div>
+                        
                         {tender.proposals.map((proposal) => (
                             <div>
                                 <Link to={`/proposals/${proposal.id}`}>                                    
