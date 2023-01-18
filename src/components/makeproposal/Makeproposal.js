@@ -50,7 +50,9 @@ function Makeproposal () {
 
                <h1> Make a proposal </h1> 
 
-                <form className='publish-form' onSubmit={handleSubmit}>
+                <form className='publish-form' 
+                // onSubmit={handleSubmit}
+                >
                     {/* <h4 style="text-align:center;"> Crown Plaza Tender Proposal</h4> */}
 
                 <div className='row'>
@@ -59,8 +61,10 @@ function Makeproposal () {
 
                         <div className='tender-group'>
                              <span> Tender id </span>
-                            <input type="text" id="tender-name" onChange={(e) => setTender_Id(e.target.value)} 
-                        value={tender_id}/>
+                            <input type="text" id="tender-name" 
+                        //     onChange={(e) => setTender_Id(e.target.value)} 
+                        // value={tender_id}
+                        />
                         </div>
 
                         <div className='tender-group'>
