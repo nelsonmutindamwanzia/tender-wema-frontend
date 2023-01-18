@@ -28,7 +28,7 @@ function Makeproposal () {
         })
             .then((response) => response.json())
             setTimeout(() => {
-                navigate("/proposals");
+                navigate("/bidtenders");
             }, 1000)
     };
 
