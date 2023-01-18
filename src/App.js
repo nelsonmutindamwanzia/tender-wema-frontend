@@ -15,6 +15,7 @@ import EachTender from './components/Tenders/EachTender';
 import AllTenders from './components/apply-tender/AllTenders';
 import EvaluateProposals from './components/evaluate-proposals/EvaluateProposals';
 import SubmitProposal from './components/apply-tender/SubmitProposal';
+import EachSupplier from './components/supplierProfiles/EachSupplier';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
         <Route path='/signup' element={<Wsignup />}/>
         <Route path='/login' element={<Wlogin />}/>
         <Route path='/suppliers' element={<Suppliers/>}/>
+        <Route path='/suppliers/:id' element={<EachSupplier/>}/>
         <Route path='/tenders/publish' element={<PublishedTender/>}/>
         <Route path='/proposals' element={<AllProposals/>}/>
         <Route path='/proposals/:id' element={<EachProposal/>}/>
