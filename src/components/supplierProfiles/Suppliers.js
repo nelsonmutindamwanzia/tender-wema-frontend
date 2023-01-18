@@ -92,7 +92,7 @@ function Suppliers() {
                                         </tbody>
                                     </table>
 
-                                    <div className="btnholder">
+                                    <div className="btnsupplierview">
                                         <Link to={`/suppliers/${supplier.id}`} ><span class="btn" id="submittender">View Supplier</span></Link>
                                     </div>
 

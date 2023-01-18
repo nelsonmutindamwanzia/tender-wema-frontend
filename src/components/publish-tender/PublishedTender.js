@@ -6,7 +6,7 @@ import SupplierSideBar from '../supplierProfiles/SupplierSideBar';
 // import {GrDocumentPerformance} from "react-icons/gr";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./publishtender.css";
-import Footer from '../Footer';
+import Footer from "../Footer";
 
 function PublishedTender () {
     const navigate = useNavigate();
@@ -112,9 +112,9 @@ function PublishedTender () {
                     
                 </div>
                 </form>
-            </div></div>
+            </div>
+            </div>
         </div>
-        <Footer/>
         </>
     )
 }

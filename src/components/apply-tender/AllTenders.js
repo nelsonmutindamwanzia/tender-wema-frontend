@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import MakeProposalSidebar from "../makeproposal/MakeProposalSidebar";
 import './alltenders.css';
 import { FaSearch } from "react-icons/fa"
-import Footer from "../Footer";
+// import Footer from "../Footer";
 
 
 function AllTenders() {
@@ -51,6 +51,7 @@ function AllTenders() {
                 </div>
                 <div className="bidtenders-container">
                     {/* search */}
+                    <br/>
                     <div class="search" >
                         <FaSearch style={{
                             color: "#5A96F9",
@@ -69,7 +70,7 @@ function AllTenders() {
 
                     {/* all tenders */}
 
-                    <div className="login-logout">
+                    {/* <div className="login-logout">
                         You are signed in as: {loggedEmail}
                         {!loggedEmail ? (
                             <button onClick={getProfile}> Supplier </button>
@@ -82,7 +83,7 @@ function AllTenders() {
                                 }}>Logout</button>
                             </>
                         )}
-                    </div>
+                    </div> */}
                     <h5>All Tenders</h5>
                     <div className="bidtenders-cards-container" >
                         {allTenders.map((tender) => {
@@ -130,7 +131,6 @@ function AllTenders() {
 
                 </div>
             </div>
-            <Footer />
         </>
     )
 

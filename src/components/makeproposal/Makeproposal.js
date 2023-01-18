@@ -41,9 +41,9 @@ function Makeproposal () {
             {/* <Navi/> */}
             <div className='publish-content'>
                 <br/>
-                <div className="form-outline">
+                {/* <div className="form-outline">
                     <input type="search" id="form1" class="form-control" placeholder="Search" aria-label="Search" />
-                </div>
+                </div> */}
                 <br/>
 
                <h1> Make a proposal </h1> 
@@ -57,12 +57,16 @@ function Makeproposal () {
 
                     <div className='col-md-6'>
 
-                        <div className='tender-group'>
+                    {/* <div className='tender-group'>
                              <span> Tender id </span>
                             <input type="text" id="tender-name" 
                         //     onChange={(e) => setTender_Id(e.target.value)} 
                         // value={tender_id}
                         />
+                        </div> */}
+                        <div className='tender-group'>
+                            <span> KRA pin </span>
+                            <input type="text" id="tender-category"/>
                         </div>
 
                         <div className='tender-group'>
@@ -85,10 +89,6 @@ function Makeproposal () {
 
                     <div  className=' col-xs-12 col-md-6'>
                         
-                        <div className='tender-group'>
-                            <span> KRA pin </span>
-                            <input type="text" id="tender-category"/>
-                        </div>
                         <div className='tender-group'>
                             <span> Company licence </span>
                             <input type="file" id="tender-budget" />
