@@ -1,7 +1,5 @@
 import React from 'react';
-import Footer from './components/Footer';
 import Landing from './components/Landing';
-import Navi from './components/Navi';
 import { Route, Routes } from 'react-router-dom';
 import AllProposals from './components/submittedProposals/AllProposals';
 import TenderResult from './components/tender-results/Tender-Results';

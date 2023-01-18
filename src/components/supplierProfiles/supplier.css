@@ -19,27 +19,28 @@
 }
 
 .supplier-card{
-    width: 280px;
-    height: 260px;
+    width: 410px;
+    height: 290px;
     background-color: #E4EDFF;
     margin: 10px;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 10px;   
 }
-.supplier-card h6{
-    font-size: 18px;
+.supplier-card h5{
+    font-size: 24px;
     font-weight: bold;
     text-align: center;
 }
-.supplier-card p{
-    font-size: 16px;
+.supplier-card td{
+    font-size: 18px;
 }
 
 .proposal-container {
     margin-left: 280px;
     margin-top: -770px;
     margin-bottom: 50px;
+
     
 }
 
@@ -50,8 +51,8 @@
     flex-wrap: wrap;
 }
 .proposal-card{
-    width: 300px;
-    height: 270px;
+    width: 380px;
+    height: 380px;
     background-color: #E4EDFF;
     margin: 10px;
     border-radius: 20px;
@@ -60,7 +61,7 @@
     line-height: 12px;
 }
 .proposal-card h5{
-    font-size: 19px;
+    font-size: 24px;
     font-weight: bold;
     text-align: center;
 }
@@ -121,7 +122,7 @@
 }
 
 .tenders-container {
-    margin-left: 250px;
+    margin-left: 280px;
     margin-top: -770px;
     margin-bottom: 50px;
 }
@@ -132,8 +133,8 @@
     flex-wrap: wrap;
 }
 .tenders-card{
-    width: 320px;
-    height: 300px;
+    width: 380px;
+    height: 380px;
     background-color: #E4EDFF;
     margin: 20px;
     border-radius: 20px;
@@ -142,7 +143,7 @@
     line-height: 12px;
 }
 .tenders-card h5{
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
 }
@@ -156,3 +157,38 @@
     margin-top: auto;
     margin-left: 0px;
 }
+
+tr{
+    /* border: 0; */
+    padding: 0;
+    margin: 0;
+    line-height: 15px;
+}
+td {
+    font-size: 15px;
+}
+
+.btnholder {
+    text-align: center;
+}
+.btn#submittender{
+    background-color: #0D51C0;
+	text-align: center;
+	color: #ffffff;
+	font-weight: 600;
+    width: 239px;
+    height: 52px;
+    font-size: 20px;
+}
+.btn#proposetender{
+    background-color: #0D51C0;
+	text-align: center;
+	color: #ffffff;
+	font-weight: 600;
+    width: 239px;
+    height: 52px;
+    font-size: 20px;
+}
+
+
+

@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import SupplierSideBar from "../supplierProfiles/SupplierSideBar";
 import '../supplierProfiles/supplier.css';
+import {FaSearch} from "react-icons/fa"
+import Footer from "../Footer";
+
 
 function Tenders() {
     const [tenders, setTenders] = useState([]);
@@ -27,9 +30,11 @@ function Tenders() {
         <div>
             <SupplierSideBar />
             <div className="tenders-container">
-                <br></br>
-                <div class="search" >
-                    <i class="fa fa-search"></i>
+                <br/><br/>
+                <div className="search" >
+                    <FaSearch style={{
+                                    color: "#5A96F9",
+                                    }}/>                    
                     <input
                         type="text"
                         placeholder="Search Supplier"
@@ -41,6 +46,7 @@ function Tenders() {
                     />
                 </div>
                 <br></br>
+                
                 <h5>All Tenders</h5>
                 <div className="tenders-cards-container" >
                     {tenders.map((tender) => {
@@ -50,12 +56,29 @@ function Tenders() {
                             <div>
                                 <div className="tenders-card" key={tender.id} >
                                     <h5>{tender.tender_name} </h5>
-                                    <h6>Tender Category: <strong>{tender.tender_category}</strong></h6>
-                                    <h6>Tender Budget: <strong>{tender.budget}</strong></h6>
-                                    <h6>Timeline: <strong>{timeline}</strong></h6>
-                                    <h6>Application Deadline: <strong> {deadline}</strong></h6>
-                                    {/* <p>Description: {tender.tender_description}</p> */}
-                                    <Link to={`/tenders/${tender.id}`} ><span class="badge bg-primary">View Tender</span></Link>
+                                    <table className="table">
+                                                                <tbody>
+                                                                    <tr>
+                                                                    <td>Tender Category</td>
+                                                                    <td>{tender.tender_category}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                    <td>Tender Budget:</td>
+                                                                    <td>{tender.budget}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                    <td>Timeline:</td>
+                                                                    <td>{timeline}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                    <td>Application Deadline:</td>
+                                                                    <td> {deadline}</td>
+                                                                    </tr>
+                                                                </tbody>
+                                    </table>
+                                    <div className="btnholder">
+                                        <Link to={`/tenders/${tender.id}`} ><span class="btn" id="submittender">Submit Proposal</span></Link>
+                                    </div>
                                 </div>
                             </div>
 
@@ -66,6 +89,7 @@ function Tenders() {
                 </div>
 
             </div>
+            <Footer/>
         </div>
     )
 }
