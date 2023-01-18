@@ -1,10 +1,10 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
 import { useState } from 'react';
-import loginimg from '../assets/loginw.png'
-import '../styles/wlogin.css'
-import Footer from './Footer';
-import Navi from './Navi';
+import loginimg from './loginw.png'
+import './tlogin.css';
+import Footer from '../Footer';
+import Navi from '../Navi';
 
 function Wlogin () 
 
@@ -24,7 +24,7 @@ function Wlogin ()
             "Content-Type": "application/json",
         },
         body: JSON.stringify({
-            supplier: {
+            tenderer: {
                 email: email,
                 password: password,
             },

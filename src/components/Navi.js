@@ -72,6 +72,7 @@ function Navi() {
                 </div>
                 <a className="nav-link" href="/signup">Sign Up</a>
                 <a className="nav-link" href="/login">Login</a>
+                <a className="nav-link" href="/tenderer-login">Tenderer Login</a>
               </div>
             </div>
           </div>
