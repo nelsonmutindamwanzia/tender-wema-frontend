@@ -19,21 +19,21 @@
 }
 
 .supplier-card{
-    width: 280px;
-    height: 260px;
+    width: 410px;
+    height: 290px;
     background-color: #E4EDFF;
     margin: 10px;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 10px;   
 }
-.supplier-card h6{
-    font-size: 18px;
+.supplier-card h5{
+    font-size: 24px;
     font-weight: bold;
     text-align: center;
 }
-.supplier-card p{
-    font-size: 16px;
+.supplier-card td{
+    font-size: 18px;
 }
 
 .proposal-container {

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./supplier.css";
 import SupplierSideBar from "./SupplierSideBar";
+import {FaSearch} from "react-icons/fa"
+import Footer from "../Footer";
 //import SupSearchBar from "./SupSearchBar";
 
 function Suppliers() {
@@ -41,10 +43,12 @@ function Suppliers() {
         <>
         <SupplierSideBar />
         <div className="supplier-page" >
-            <br></br>
+            <br/><br/>
             <div class="search" >
-                <i class="fa fa-search"></i>
-                <input
+            <FaSearch style={{
+                            color: "#5A96F9",
+                            }}/>                  
+            <input
                     type="text"
                     placeholder="Search Supplier"
                     onChange={(e) => {
@@ -61,7 +65,7 @@ function Suppliers() {
                 onChange={handleSearch}
                 value={searchInput} /> */}
 
-            <br></br>
+            <br/>
 
             <h5>Supplier Profiles</h5>
             <div className="supplier-cards-container" >
@@ -69,11 +73,24 @@ function Suppliers() {
                     return (
                         <div className="box-card">
                             <div className="supplier-card" key={supplier.id} >
-                                <h6> {supplier.company_name} </h6>
-                                <p>Email: {supplier.email}</p>
-                                <p>Telephone: {supplier.company_telephone}</p>
-                                <p>Address: {supplier.company_address}</p>
-                                {/* <span class="badge bg-primary">View</span> */}
+                                <h5> {supplier.company_name} </h5>
+                                <table className="table">
+                                                                <tbody>
+                                                                    <tr>
+                                                                    <td>Email:</td>
+                                                                    <td>{supplier.email}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                    <td>Telephone:</td>
+                                                                    <td>{supplier.company_telephone}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                    <td>Address:</td>
+                                                                    <td>{supplier.company_address}</td>
+                                                                    </tr>
+                                                                </tbody>
+                                    </table>
+
                             </div>
                         </div>
 
@@ -82,6 +99,7 @@ function Suppliers() {
                 })}
             </div>
         </div>
+        <Footer/>
         </>
     )
 
