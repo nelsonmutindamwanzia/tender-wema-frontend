@@ -46,6 +46,7 @@ function Tenders() {
                     />
                 </div>
                 <br></br>
+                
                 <h5>All Tenders</h5>
                 <div className="tenders-cards-container" >
                     {tenders.map((tender) => {
