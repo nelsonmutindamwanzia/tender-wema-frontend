@@ -117,7 +117,7 @@ function AllTenders() {
                                             </tbody>
                                         </table>
                                         <div className="btnholder">
-                                            <Link to={`/tenders/${tender.id}`} ><span class="btn" id="submittender">Submit Proposal</span></Link>
+                                            <Link to={'/tenders/make-proposal'} ><span class="btn" id="submittender">Submit Proposal</span></Link>
                                         </div>
                                     </div>
                                 </div>
