@@ -15,6 +15,7 @@ import Suppliers from './components/supplierProfiles/Suppliers';
 import EachProposal from './components/submittedProposals/EachProposal';
 import EachTender from './components/Tenders/EachTender';
 import AllTenders from './components/apply-tender/AllTender';
+import SubmitProposal from './components/apply-tender/SubmitProposal';
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
         <Route path="/tenders/active" element={<ActiveTenders />} />
         <Route path='/tenders/makeproposal' element={<Makeproposal/>}/>
         <Route path='/bidtenders' element={<AllTenders/>}/>
+        <Route path='/bidtenders/:id' element={<SubmitProposal/>}/>
 
       </Routes>
       <Footer/>

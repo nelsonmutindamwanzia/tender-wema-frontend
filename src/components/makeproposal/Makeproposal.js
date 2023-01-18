@@ -10,10 +10,36 @@ import Popper from 'popper.js';
 // import Navi from '../Navi';
 // import Footer from '../Footer';
 import MakeProposalSidebar from './MakeProposalSidebar';
+import { useNavigate } from 'react-router';
 // import '../supplierProfiles/Navbar.css'
 
 
 function Makeproposal () {
+
+    const navigate = useNavigate();
+
+    const createProposal = (e) => {
+        e.preventDefault();
+        fetch("http://127.0.0.1:3000/proposals", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                // tender_id: tenderId,
+                // kra_pin: kra_pin,
+                // company_license: company_license,
+                // bank_statements: bank_statements,
+                // tax_compliance: tax_compliance,
+                // council_registration: council_registration,
+
+            }),
+        })
+            .then((response) => response.json())
+            setTimeout(() => {
+                navigate("/proposals");
+            }, 1000)
+    };
 
 
 
@@ -95,10 +121,15 @@ function Makeproposal () {
                     </div>
 
                    
-
-                    <div className='col-md-12'>
-                            <button>Submit Proposal</button>
-                    </div>
+                    <div>
+                <button
+                    className="my-2 btn btn-primary"
+                    type="submit"
+                    onClick={createProposal}
+                >
+                    Submit Proposal
+                </button>
+            </div>
                     
                         {/* <Footer/> */}
                 </div>

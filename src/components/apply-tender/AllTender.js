@@ -53,7 +53,7 @@ function AllTenders() {
                                     <p>Timeline: <strong>{tender.timeline}</strong></p>
                                     <p>Application Deadline: <strong> {tender.application_deadline}</strong></p>
                                     <p><strong>Description: </strong>{tender.tender_description}</p>
-                                    <Link to={`/tenders/${tender.id}`} ><span class="badge bg-primary">Submit Proposal</span></Link>
+                                    <Link to={'/tenders/makeproposal'} ><span class="badge bg-primary">Submit Proposal</span></Link>
                                 </div>
                             </div>
 
