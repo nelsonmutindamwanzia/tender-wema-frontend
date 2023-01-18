@@ -80,7 +80,7 @@ function EvaluateProposals() {
                     </div>
                     <div className='col-md-12'>
                         <div className = "ep-button">
-                            <button>Submit Tender</button>
+                            <button>Post Evaluation</button>
                         </div>
                     </div> 
                     
