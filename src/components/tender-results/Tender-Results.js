@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Footer from '../Footer';
-import './Tender-Result.css';
+import '../tender-results/Tender-Result.css';
 import MakeProposalSidebar from '../makeproposal/MakeProposalSidebar';
 
 function TenderResult () {
