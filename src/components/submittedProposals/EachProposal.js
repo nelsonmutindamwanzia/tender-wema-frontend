@@ -7,13 +7,13 @@ import './eachproposal.css';
 function EachProposal() {
     const params = useParams();
     const [proposals, setProposals] = useState([]);
-    const [kra_pin, setKra_pin] = useState("");
-    const [company_license, setCompany_license] = useState("");
-    const [bank_statements, SetBank_statements] = useState("");
-    const [tax_compliance, SetTax_compliance] = useState("");
-    const [council_registration, SetCouncil_registration] = useState("");
-    const [proposal_amount, SetProposal_amount] = useState(0);
-    const [status, setStatus] = useState("false");
+    // const [kra_pin, setKra_pin] = useState("");
+    // const [company_license, setCompany_license] = useState("");
+    // const [bank_statements, SetBank_statements] = useState("");
+    // const [tax_compliance, SetTax_compliance] = useState("");
+    // const [council_registration, SetCouncil_registration] = useState("");
+    // const [proposal_amount, SetProposal_amount] = useState(0);
+    // const [status, setStatus] = useState("false");
 
     useEffect(() => {
         fetch(`https://tender-wema-production.up.railway.app/proposals`)

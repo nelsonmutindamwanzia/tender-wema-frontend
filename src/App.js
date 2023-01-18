@@ -15,6 +15,9 @@ import EachTender from './components/Tenders/EachTender';
 import AllTenders from './components/apply-tender/AllTenders';
 import EvaluateProposals from './components/evaluate-proposals/EvaluateProposals';
 import SubmitProposal from './components/apply-tender/SubmitProposal';
+import EachSupplier from './components/supplierProfiles/EachSupplier';
+import TLogin from './components/tenderer-login/TLogin';
+import EvaluatedResults from './components/evaluate-proposals/EvaluatedResults';
 
 function App() {
 
@@ -25,7 +28,9 @@ function App() {
         <Route path='/' element={<Landing/>}/>
         <Route path='/signup' element={<Wsignup />}/>
         <Route path='/login' element={<Wlogin />}/>
+        <Route path='/tenderer-login' element={<TLogin />}/>
         <Route path='/suppliers' element={<Suppliers/>}/>
+        <Route path='/suppliers/:id' element={<EachSupplier/>}/>
         <Route path='/tenders/publish' element={<PublishedTender/>}/>
         <Route path='/proposals' element={<AllProposals/>}/>
         <Route path='/proposals/:id' element={<EachProposal/>}/>
@@ -35,7 +40,7 @@ function App() {
         <Route path="/tenders/active" element={<ActiveTenders />} />
         <Route path='/tenders/make-proposal' element={<Makeproposal/>}/>
         <Route path='/bidtenders' element={<AllTenders/>}/>
-        <Route path='/evaluation' element={<EvaluateProposals/>}/>
+        <Route path='/evaluation' element={<EvaluatedResults/>}/>
         <Route path='/bidtenders/:id' element={<SubmitProposal/>}/>
 
       </Routes>

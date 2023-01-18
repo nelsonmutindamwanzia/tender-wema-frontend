@@ -38,14 +38,14 @@ const SidebarData = [
     cName: 'nav-text'
   },
   {
-    title: 'Evaluate Proposals',
+    title: 'Evaluation Scores',
     path: '/evaluation',
     icon: <IoIcons.IoMdGitCompare />,
     cName: 'nav-text'
   },
   {
     title: 'Logout',
-    path: '/logout',
+    path: '/',
     icon: <IoIcons.IoMdLogOut />,
     cName: 'nav-text'
   }

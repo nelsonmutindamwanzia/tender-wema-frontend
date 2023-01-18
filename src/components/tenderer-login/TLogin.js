@@ -1,10 +1,10 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
 import { useState } from 'react';
-import loginimg from '../assets/loginw.png'
-import '../styles/wlogin.css'
-import Footer from './Footer';
-import Navi from './Navi';
+import loginimg from './loginw.png'
+import './tlogin.css';
+import Footer from '../Footer';
+import Navi from '../Navi';
 
 function Wlogin () 
 
@@ -17,14 +17,14 @@ function Wlogin ()
     
     function handleSubmit(event){
         event.preventDefault()
-        fetch("https://tender-wema-production.up.railway.app/login", {
+        fetch("https://tender-wema-production.up.railway.app/tenderer-login", {
         method: "POST",
         headers: {
             Accepts: "application/json",
             "Content-Type": "application/json",
         },
         body: JSON.stringify({
-            supplier: {
+            tenderer: {
                 email: email,
                 password: password,
             },
@@ -34,7 +34,7 @@ function Wlogin ()
             if (r.ok) {
                 r.json().then(data => {
                     localStorage.setItem("token", data.jwt)
-                    navigate('/bidtenders')
+                    navigate('/tenders')
                         
                     });
             } else {
@@ -47,8 +47,6 @@ function Wlogin ()
         SetEmail("");
         setPassword("");
         }
-
-        
 
     return (
         <>

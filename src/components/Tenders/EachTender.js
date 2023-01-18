@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
+import { Link } from "react-router-dom";
 import SupplierSideBar from "../supplierProfiles/SupplierSideBar";
+import "./eachtender.css"
 
 function EachTender() {
     const params = useParams();
@@ -21,14 +23,22 @@ function EachTender() {
     const showEachTender = tenders.map(
         (tender) => 
         tender.id === parseInt(params.id) && (
-            <div>
-                <div>                
-                    <p>Description: {tender.tender_description}</p>
+            <div className="each-tender-container" >
+                <div>  
+                    <Link to={`/tender.id`} > {tender.tender_name} </Link> <br></br>             
+                    <p>Tender Description: {tender.tender_description}</p>
                 </div>
                 <div>
                     <h6>Proposals recieved</h6>
                     <div>
-                        [{tender.proposals}]
+                        
+                        {tender.proposals.map((proposal) => (
+                            <div>
+                                <Link to={`/proposals/${proposal.id}`}>                                    
+                                    <p>Proposal Entry Number: {proposal.id} </p>
+                                </Link>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

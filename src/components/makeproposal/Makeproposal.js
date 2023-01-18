@@ -11,7 +11,7 @@ function Makeproposal () {
 
     const createProposal = (e) => {
         e.preventDefault();
-        fetch("http://127.0.0.1:3000/proposals", {
+        fetch("https://tender-wema-production.up.railway.app/proposals", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -28,11 +28,9 @@ function Makeproposal () {
         })
             .then((response) => response.json())
             setTimeout(() => {
-                navigate("/proposals");
+                navigate("/bidtenders");
             }, 1000)
     };
-
-
 
     return (
         <>
@@ -43,9 +41,9 @@ function Makeproposal () {
             {/* <Navi/> */}
             <div className='publish-content'>
                 <br/>
-                <div className="form-outline">
+                {/* <div className="form-outline">
                     <input type="search" id="form1" class="form-control" placeholder="Search" aria-label="Search" />
-                </div>
+                </div> */}
                 <br/>
 
                <h1> Make a proposal </h1> 
@@ -59,12 +57,16 @@ function Makeproposal () {
 
                     <div className='col-md-6'>
 
-                        <div className='tender-group'>
+                    {/* <div className='tender-group'>
                              <span> Tender id </span>
                             <input type="text" id="tender-name" 
                         //     onChange={(e) => setTender_Id(e.target.value)} 
                         // value={tender_id}
                         />
+                        </div> */}
+                        <div className='tender-group'>
+                            <span> KRA pin </span>
+                            <input type="text" id="tender-category"/>
                         </div>
 
                         <div className='tender-group'>
@@ -87,10 +89,6 @@ function Makeproposal () {
 
                     <div  className=' col-xs-12 col-md-6'>
                         
-                        <div className='tender-group'>
-                            <span> KRA pin </span>
-                            <input type="text" id="tender-category"/>
-                        </div>
                         <div className='tender-group'>
                             <span> Company licence </span>
                             <input type="file" id="tender-budget" />
@@ -124,23 +122,11 @@ function Makeproposal () {
                     
                         {/* <Footer/> */}
                 </div>
-
-
-
-
                 </form>
-
-                
-
-
             </div>
-
-
         </div>
         </>
     )
-
-
 }
 
 export default Makeproposal;
