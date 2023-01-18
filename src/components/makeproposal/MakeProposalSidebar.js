@@ -4,7 +4,7 @@ import * as AiIcons from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import * as IoIcons from 'react-icons/io';
 // import './Navbar.css';
-import { IconContext } from 'react-icons';
+// import { IconContext } from 'react-icons';
 import './makeproposal.css'
 
 
