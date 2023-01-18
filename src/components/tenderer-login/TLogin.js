@@ -17,7 +17,7 @@ function Wlogin ()
     
     function handleSubmit(event){
         event.preventDefault()
-        fetch("https://tender-wema-production.up.railway.app/login", {
+        fetch("https://tender-wema-production.up.railway.app/tenderer-login", {
         method: "POST",
         headers: {
             Accepts: "application/json",
@@ -34,7 +34,7 @@ function Wlogin ()
             if (r.ok) {
                 r.json().then(data => {
                     localStorage.setItem("token", data.jwt)
-                    navigate('/bidtenders')
+                    navigate('/tenders')
                         
                     });
             } else {
@@ -47,8 +47,6 @@ function Wlogin ()
         SetEmail("");
         setPassword("");
         }
-
-        
 
     return (
         <>

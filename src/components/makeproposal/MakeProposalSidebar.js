@@ -42,8 +42,6 @@ const SidebarData = [
   }
 ];
 
-
-
 function MakeProposalSidebar () {
   
   return (

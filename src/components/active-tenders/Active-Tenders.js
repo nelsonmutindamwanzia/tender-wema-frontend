@@ -10,7 +10,6 @@ function ActiveTenders () {
         startDate: new Date(),
         endDate: null
     })
-    // const filteredDates = tenders.filter(application_deadline => new Date(application_deadline) - new Date() > 0);
     
     useEffect(() => {
         fetch(`https://tender-wema-production.up.railway.app/tenders`)
@@ -27,10 +26,6 @@ function ActiveTenders () {
                 }
             }))
     }, [filterQuery])
-
-    
-    
-
 
     return (
         <>

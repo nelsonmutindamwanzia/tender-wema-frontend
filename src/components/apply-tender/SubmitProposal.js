@@ -31,7 +31,7 @@ function SubmitProposal({ tenderId }) {
 
     const createProposal = (e) => {
         e.preventDefault();
-        fetch("http://127.0.0.1:3000/proposals", {
+        fetch("https://tender-wema-production.up.railway.app/proposals", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
