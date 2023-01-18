@@ -13,7 +13,7 @@ function Tenders() {
     const [filterQuery, setFilterQuery] = useState("");
 
     useEffect(() => {
-        fetch(`http://127.0.0.1:3000/tenders`)
+        fetch(`https://tender-wema-production.up.railway.app/tenders`)
             .then((response) => response.json())
             .then((data => {
                 if (!filterQuery) {
@@ -87,7 +87,7 @@ function Tenders() {
                                             className="btn btn-danger btn-sm"
                                             onClick={(e) => {
                                                 e.preventDefault();
-                                                fetch(`http://127.0.0.1:3000/tenders/${tender.id}`, {
+                                                fetch(`https://tender-wema-production.up.railway.app/tenders/${tender.id}`, {
                                                     method: "DELETE",
                                                 });
                                             }}
