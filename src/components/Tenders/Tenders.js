@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import SupplierSideBar from "../supplierProfiles/SupplierSideBar";
 import '../supplierProfiles/supplier.css';
 import { FaSearch } from "react-icons/fa"
@@ -7,7 +7,9 @@ import Footer from "../Footer";
 
 
 function Tenders() {
+    const params = useParams();
     const [tenders, setTenders] = useState([]);
+    const [tenderId, setTenderId] = useState(Number(params.id));
     const [filterQuery, setFilterQuery] = useState("");
 
     useEffect(() => {
@@ -78,6 +80,20 @@ function Tenders() {
                                     </table>
                                     <div className="btnholder">
                                         <Link to={`/tenders/${tender.id}`} ><span class="btn" id="submittender">View Proposals</span></Link>
+                                    </div>
+                                    <div>
+                                        <button
+                                            type="button"
+                                            className="btn btn-danger btn-sm"
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                fetch(`http://127.0.0.1:3000/tenders/${tender.id}`, {
+                                                    method: "DELETE",
+                                                });
+                                            }}
+                                        >
+                                            Delete
+                                        </button>
                                     </div>
                                 </div>
                             </div>
