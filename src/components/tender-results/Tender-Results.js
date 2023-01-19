@@ -40,11 +40,11 @@ function TenderResult () {
                                             <tbody className='tender-results'>
                                                 <tr>
                                                     <td>Tender ID: </td>
-                                                    <td>023/2021</td>
+                                                    <td>4</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Proposal Amount: </td>
-                                                    <td>$5000</td>
+                                                    <td>$50000</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Proposal Score: </td>
